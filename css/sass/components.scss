@@ -360,7 +360,7 @@
 .sidebar{
     background-color: white;
     box-shadow: 4px -4px 8px rgba(0,0,0,0.8), -2px 0px 4px rgba(0,0,0,0.8);
-    height: 35rem;
+    height: 52rem;
     overflow-y: auto;
     grid-row: 1 / 3;
     white-space: nowrap;
@@ -384,10 +384,13 @@
     align-items:center;
     justify-content:baseline;
     margin: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .logo-image{
     margin-top: 1rem;
+    margin-bottom: 0.5rem;
+
 }
 
 .logo-words-group {
@@ -395,6 +398,7 @@
     flex-direction: row;
     align-items: start;
     position: absolute;
+
     top: 92%;
     .write-bar{
         font-size: 14pt;

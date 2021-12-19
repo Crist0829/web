@@ -1,0 +1,19 @@
+{
+  "name": "crist",
+  "version": "1.0.0",
+  "description": "crist web page",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crist0829/web.git"
+  },
+  "author": "crist089",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Crist0829/web/issues"
+  },
+  "homepage": "https://github.com/Crist0829/web#readme"
+}
