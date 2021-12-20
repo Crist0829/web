@@ -17,7 +17,7 @@
             height: 100%;
             display:flex;
             flex-direction:column;
-            align-items:flex-end;
+            align-items:flex-start;
 
             .icon-responsive{
                 display: block;
@@ -29,6 +29,18 @@
             ul{
                 display:none;
                 flex-direction:column;
+                justify-content: start;
+                align-items: start;
+                margin-bottom: 1rem;
+                li{
+                    padding: 0.5rem;
+
+                    a{
+                        padding: 0.5rem;
+                        border-radius: 0.5rem;
+                    }
+                }
+
             }
         }
 
@@ -43,6 +55,7 @@
 }
 
 @media (max-width: 768px){
+
     header{
         margin: 0.5rem;
         .header-content{
@@ -57,6 +70,7 @@
     main{
         margin: 0.5rem;
         padding: 0.5rem;
+        display: none;
         .content{
             margin: 0.5rem;
             margin-bottom: 3rem;
@@ -80,9 +94,6 @@
                 }
             }
         }
-        display: flex;
-        flex-direction:column;
-
         .sidebar{
             margin: 0.5rem;
             height: auto;
@@ -100,4 +111,36 @@
             }
         }
     }
+
+
+    footer:hover{
+        height: 12rem;
+        opacity: 1;
+    
+        .container-social{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content:center;
+            border-radius:0.5rem;
+            border: 1px dashed black;
+        }
+    
+        .social{
+            margin: 0.3rem;
+            font-size: 36pt;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content:center;
+        }
+    
+        .social-text{
+            display: block;
+            font-size: 12pt;
+            margin: 0.5rem;
+        }
+    }
+    
+
 }

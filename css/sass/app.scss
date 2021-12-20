@@ -7,19 +7,11 @@ body{
     font-family: main;
     background-color:white;
     //background-color: rgb(80, 75, 75);
+    height: 50rem;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    align-content: center;
-    align-self: center;
-    .preloader{
-     
-        span{
-            font-size: 25pt;
-        }
-
-    }
+    
 }
 
 
@@ -52,7 +44,7 @@ header{
 
 footer{
     display: none; // Empieza oculta para cambiarlo con el
-    opacity: 0.6;
+    opacity: 0.8;
     background-color: #00AA88;
     height: 3rem;
     width: 100%;
@@ -62,8 +54,7 @@ footer{
     flex-direction: row;
     align-items: center;
     justify-content:center;
-    transition: height 0.5s ease; 
-    transition: opacity 0.5 ease;
+    transition: all 0.5s ease; 
     
     .container-social{
         display: flex;
@@ -86,12 +77,12 @@ footer{
 }
 
 footer:hover{
-    height:12rem;
+    padding: 1rem;
     opacity: 1;
 
     .container-social{
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         align-items: start;
         justify-content:center;
         border-radius:0.5rem;
@@ -99,7 +90,7 @@ footer:hover{
     }
 
     .social{
-        margin: 4px;
+        margin: 0.3rem;
         font-size: 36pt;
         display: flex;
         flex-direction: row;
@@ -109,7 +100,8 @@ footer:hover{
 
     .social-text{
         display: block;
-        font-size: 24pt;
+        font-size: 12pt;
+        margin: 0.5rem;
     }
 }
 

@@ -385,11 +385,12 @@
     justify-content:baseline;
     margin: 1rem;
     margin-bottom: 1.5rem;
+    
 }
 
 .logo-image{
-    margin-top: 1rem;
-    margin-bottom: 0.5rem;
+    padding: 1rem;
+    padding-top: 0px;
 
 }
 
@@ -398,8 +399,7 @@
     flex-direction: row;
     align-items: start;
     position: absolute;
-
-    top: 92%;
+    top: 85%;
     .write-bar{
         font-size: 14pt;
         font-weight: bold;
@@ -408,12 +408,10 @@
 
 .logo-words{
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
     display: flex;
     flex-direction: row;
     align-items: start;
     justify-content: start;
-
     .letter-logo{
         font-size: 10pt;
     }
@@ -556,6 +554,7 @@
 
 //----------Content-------------------//
 .content{
+    height: 33rem;
     box-shadow: 4px -4px 8px rgba(0,0,0,0.8), -2px 0px 4px rgba(0,0,0,0.8);
     background-color: white;
 
@@ -587,4 +586,13 @@
     }
 }
 
+.preloader{
+     
+    span{
+        
+        color: #00AA88;
+        font-size: 20pt;
+    }
+
+}
 

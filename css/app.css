@@ -6,15 +6,10 @@
 body {
   font-family: main;
   background-color: white;
+  height: 50rem;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  align-content: center;
-  align-self: center;
-}
-body .preloader span {
-  font-size: 25pt;
 }
 
 main {
@@ -43,7 +38,7 @@ header {
 
 footer {
   display: none;
-  opacity: 0.6;
+  opacity: 0.8;
   background-color: #00AA88;
   height: 3rem;
   width: 100%;
@@ -52,8 +47,7 @@ footer {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  transition: height 0.5s ease;
-  transition: opacity 0.5 ease;
+  transition: all 0.5s ease;
 }
 footer .container-social {
   display: flex;
@@ -73,19 +67,19 @@ footer .social-text {
 }
 
 footer:hover {
-  height: 12rem;
+  padding: 1rem;
   opacity: 1;
 }
 footer:hover .container-social {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: start;
   justify-content: center;
   border-radius: 0.5rem;
   border: 1px dashed black;
 }
 footer:hover .social {
-  margin: 4px;
+  margin: 0.3rem;
   font-size: 36pt;
   display: flex;
   flex-direction: row;
@@ -94,7 +88,8 @@ footer:hover .social {
 }
 footer:hover .social-text {
   display: block;
-  font-size: 24pt;
+  font-size: 12pt;
+  margin: 0.5rem;
 }
 
 @font-face {
@@ -477,8 +472,8 @@ footer:hover .social-text {
 }
 
 .logo-image {
-  margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  padding: 1rem;
+  padding-top: 0px;
 }
 
 .logo-words-group {
@@ -486,7 +481,7 @@ footer:hover .social-text {
   flex-direction: row;
   align-items: start;
   position: absolute;
-  top: 92%;
+  top: 85%;
 }
 .logo-words-group .write-bar {
   font-size: 14pt;
@@ -611,6 +606,7 @@ footer:hover .social-text {
 }
 
 .content {
+  height: 33rem;
   box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.8), -2px 0px 4px rgba(0, 0, 0, 0.8);
   background-color: white;
 }
@@ -638,6 +634,11 @@ footer:hover .social-text {
   margin: 0rem 0.5rem 0rem 1rem;
 }
 
+.preloader span {
+  color: #00AA88;
+  font-size: 20pt;
+}
+
 @media (max-width: 1200px) {
   header .header-content .projects-container {
     display: flex;
@@ -651,7 +652,7 @@ footer:hover .social-text {
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-items: flex-end;
+    align-items: flex-start;
   }
   header .navigation .icon-responsive {
     display: block;
@@ -662,6 +663,16 @@ footer:hover .social-text {
   header .navigation ul {
     display: none;
     flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-bottom: 1rem;
+  }
+  header .navigation ul li {
+    padding: 0.5rem;
+  }
+  header .navigation ul li a {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
   }
   header .header-content {
     display: flex;
@@ -685,8 +696,7 @@ footer:hover .social-text {
   main {
     margin: 0.5rem;
     padding: 0.5rem;
-    display: flex;
-    flex-direction: column;
+    display: none;
   }
   main .content {
     margin: 0.5rem;
@@ -720,6 +730,32 @@ footer:hover .social-text {
   }
   main .sidebar .side-title {
     width: 100%;
+  }
+
+  footer:hover {
+    height: 12rem;
+    opacity: 1;
+  }
+  footer:hover .container-social {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: 1px dashed black;
+  }
+  footer:hover .social {
+    margin: 0.3rem;
+    font-size: 36pt;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  footer:hover .social-text {
+    display: block;
+    font-size: 12pt;
+    margin: 0.5rem;
   }
 }
 
