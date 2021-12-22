@@ -120,6 +120,37 @@ footer:hover .social-text {
   background: #046652;
 }
 
+.no-selection {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.m-1 {
+  margin: 0.5rem;
+}
+
+.m-2 {
+  margin: 1rem;
+}
+
+.m-3 {
+  margin: 2rem;
+}
+
+.m-4 {
+  margin: 3rem;
+}
+
+.bg-primary {
+  background-color: #00AA88;
+}
+
+.c-primary {
+  color: #00AA88;
+}
+
 .header-content {
   display: flex;
   flex-direction: row;
@@ -180,7 +211,7 @@ footer:hover .social-text {
 }
 
 .skill {
-  text-align: right;
+  text-align: center;
   color: white;
 }
 
@@ -196,87 +227,86 @@ footer:hover .social-text {
   height: 100%;
 }
 .backend hr {
-  display: none;
   border-top: 2px solid #aa480f;
-  margin: 0.5rem;
+  margin: 0.3rem;
   width: 100%;
 }
-.backend .back-text {
+.backend .progress-title {
   background-color: white;
   position: absolute;
-  bottom: 93%;
   float: left;
+  bottom: 92%;
   padding: 0.3rem;
   font-size: large;
   color: #aa480f;
 }
-.backend .container-main {
+.backend .container-main-progress {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.backend .container-main .skill-icon {
+.backend .container-main-progress .skill-icon {
   font-size: 32px;
   margin-right: 1rem;
 }
-.backend .container-main .i-php {
+.backend .container-main-progress .i-php {
   margin: 0.1rem;
   margin-right: 0.4rem;
   font-size: 26px !important;
   color: #8993be;
 }
-.backend .container-main .i-laravel {
+.backend .container-main-progress .i-laravel {
   margin-right: 0.9rem;
   font-size: 26px !important;
   color: #F05340;
 }
-.backend .container-main .i-sql {
+.backend .container-main-progress .i-sql {
   font-size: 28px !important;
   color: #00758F;
 }
-.backend .container-main .i-node {
+.backend .container-main-progress .i-node {
   font-size: 28px !important;
   color: #3C873A;
 }
-.backend .container-main .i-mongo {
+.backend .container-main-progress .i-mongo {
   font-size: 28px !important;
   color: #3C873A;
 }
-.backend .container-main .container {
+.backend .container-main-progress .progress {
   width: 10rem;
   background-color: rgba(100, 100, 100, 0.5);
   border-radius: 0.2rem;
 }
-.backend .container-main .container .php {
+.backend .container-main-progress .progress .php {
   width: 85%;
   background-color: #8993be;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.backend .container-main .container .laravel {
+.backend .container-main-progress .progress .laravel {
   width: 80%;
   background-color: #F05340;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.backend .container-main .container .sql {
+.backend .container-main-progress .progress .sql {
   width: 80%;
   background-color: #F29111;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.backend .container-main .container .node {
-  width: 80%;
+.backend .container-main-progress .progress .node {
+  width: 70%;
   background-color: #3C873A;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.backend .container-main .container .mongo {
+.backend .container-main-progress .progress .mongo {
   width: 50%;
   background-color: #3C873A;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
 
 .frontend {
@@ -288,8 +318,14 @@ footer:hover .social-text {
   border-radius: 0.5rem;
   padding: 1rem;
   margin: 1rem;
+  height: 100%;
 }
-.frontend .front-text {
+.frontend hr {
+  border-top: 2px solid #2965f1;
+  margin: 0.3rem;
+  width: 100%;
+}
+.frontend .progress-title {
   background-color: white;
   position: absolute;
   float: left;
@@ -298,68 +334,70 @@ footer:hover .social-text {
   font-size: large;
   color: #2965f1;
 }
-.frontend .container-main {
+.frontend .container-main-progress {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.frontend .container-main .skill-icon {
+.frontend .container-main-progress .skill-icon {
   font-size: 32px;
   margin-right: 0.5rem;
 }
-.frontend .container-main .i-html {
+.frontend .container-main-progress .i-html {
+  font-size: 32px !important;
   color: #aa480f;
 }
-.frontend .container-main .i-css {
+.frontend .container-main-progress .i-css {
+  font-size: 32px !important;
   color: #2965f1;
 }
-.frontend .container-main .i-js {
+.frontend .container-main-progress .i-js {
   font-size: 28px !important;
   color: #c9b114;
 }
-.frontend .container-main .i-vue {
+.frontend .container-main-progress .i-vue {
   font-size: 28px !important;
   color: #41B883;
 }
-.frontend .container-main .i-react {
+.frontend .container-main-progress .i-react {
   font-size: 26px !important;
   color: #61DBFB;
 }
-.frontend .container-main .container {
+.frontend .container-main-progress .progress {
   width: 10rem;
   background-color: rgba(100, 100, 100, 0.5);
   border-radius: 0.2rem;
 }
-.frontend .container-main .container .html {
+.frontend .container-main-progress .progress .html {
   width: 93%;
   background-color: #aa480f;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.frontend .container-main .container .css {
+.frontend .container-main-progress .progress .css {
   width: 85%;
   background-color: #2965f1;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.frontend .container-main .container .js {
+.frontend .container-main-progress .progress .js {
   width: 80%;
   background-color: #c9b114;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.frontend .container-main .container .vue {
+.frontend .container-main-progress .progress .vue {
   width: 80%;
   background-color: #41B883;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.frontend .container-main .container .react {
-  width: 40%;
+.frontend .container-main-progress .progress .react {
+  width: 50%;
   background-color: #61DBFB;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
 
 .others {
@@ -373,7 +411,12 @@ footer:hover .social-text {
   margin: 1rem;
   height: 100%;
 }
-.others .others-text {
+.others hr {
+  border-top: 2px solid #0faa31;
+  margin: 0.3rem;
+  width: 100%;
+}
+.others .progress-title {
   background-color: white;
   position: absolute;
   float: left;
@@ -382,66 +425,76 @@ footer:hover .social-text {
   font-size: large;
   color: #0faa31;
 }
-.others hr {
-  border-top: 2px solid #0faa31;
-  width: 100%;
-  margin: 0.5rem;
-}
-.others .container-main {
+.others .container-main-progress {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.others .container-main .skill-icon {
+.others .container-main-progress .skill-icon {
   font-size: 32px;
   margin-right: 1rem;
 }
-.others .container-main .i-python {
+.others .container-main-progress .i-python {
+  font-size: 32px !important;
   color: #4B8BBE;
 }
-.others .container-main .i-java {
+.others .container-main-progress .i-java {
+  font-size: 32px !important;
   color: #5382a1;
 }
-.others .container-main .i-c {
+.others .container-main-progress .i-c {
+  font-size: 32px !important;
   color: #000;
 }
-.others .container-main .i-git {
+.others .container-main-progress .i-git {
   font-size: 28px !important;
   color: #F1502F;
 }
-.others .container-main .i-vue {
+.others .container-main-progress .i-docker {
+  font-size: 20px !important;
+  color: #0db7ed;
+}
+.others .container-main-progress .i-vue {
+  font-size: 28px !important;
+  color: #41B883;
   font-size: 28px !important;
   color: #41B883;
 }
-.others .container-main .container {
+.others .container-main-progress .progress {
   width: 10rem;
   background-color: rgba(100, 100, 100, 0.5);
   border-radius: 0.2rem;
 }
-.others .container-main .container .python {
+.others .container-main-progress .progress .python {
   width: 85%;
   background-color: #4B8BBE;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.others .container-main .container .java {
+.others .container-main-progress .progress .java {
   width: 80%;
   background-color: #5382a1;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.others .container-main .container .c {
+.others .container-main-progress .progress .c {
   width: 80%;
   background-color: #000;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
 }
-.others .container-main .container .git {
+.others .container-main-progress .progress .git {
   width: 80%;
   background-color: #F1502F;
   border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: large;
+  font-size: 13pt;
+}
+.others .container-main-progress .progress .docker {
+  width: 60%;
+  background-color: #0db7ed;
+  border-radius: 0.2rem 0rem 0rem 0.2rem;
+  font-size: 13pt;
 }
 
 .sidebar {
@@ -481,10 +534,10 @@ footer:hover .social-text {
   flex-direction: row;
   align-items: start;
   position: absolute;
-  top: 85%;
+  top: 90%;
 }
 .logo-words-group .write-bar {
-  font-size: 14pt;
+  font-size: 16pt;
   font-weight: bold;
 }
 
@@ -496,7 +549,7 @@ footer:hover .social-text {
   justify-content: start;
 }
 .logo-words .letter-logo {
-  font-size: 10pt;
+  font-size: 12pt;
 }
 .logo-words .code {
   color: #00AA88;
@@ -505,13 +558,13 @@ footer:hover .social-text {
   visibility: hidden;
 }
 
-.about-me {
+.card {
   position: relative;
   border-radius: 1rem;
   border: 1px solid #00AA88;
   background-color: #ffffff;
 }
-.about-me .about-info .about-body {
+.card .card-info .card-body {
   height: 10rem;
   width: 15rem;
   display: flex;
@@ -521,28 +574,28 @@ footer:hover .social-text {
   border-radius: 0rem 0rem 1rem 1rem;
   transition: background-color 0.8s ease;
 }
-.about-me .about-info .about-body p {
+.card .card-info .card-body p {
   padding: 0.2rem 0.5rem 0rem 0.5rem;
 }
-.about-me .about-info .about-body .about-text {
+.card .card-info .card-body .card-text {
   margin-bottom: 0.5rem;
   text-align: center;
   font-size: 12pt;
 }
-.about-me .about-info .about-body .about-text .value {
+.card .card-info .card-body .card-text .value {
   font-size: 12pt;
 }
-.about-me .about-info .about-body .about-img {
-  opacity: 0.8;
+.card .card-info .card-body .card-img {
   margin-top: 0.5rem;
 }
-.about-me .about-info .about-body .about-img img {
+.card .card-info .card-body .card-img img {
   border-radius: 50%;
+  width: 100px;
 }
-.about-me .about-info .about-body .description {
+.card .card-info .card-body .card-description {
   display: none;
 }
-.about-me .about-info .about-title {
+.card .card-info .card-title {
   margin: 0px;
   text-align: center;
   background-color: #00AA88;
@@ -550,18 +603,27 @@ footer:hover .social-text {
   color: #fff;
   font-weight: bold;
   padding: 1rem;
-  font-size: 12pt;
+  font-size: 14pt;
 }
-.about-me .about-info .about-body:hover {
+.card .card-info .card-title a {
+  text-decoration: none;
+  color: #fff;
+  transition: all ease 0.5s;
+}
+.card .card-info .card-title a:hover {
+  font-size: 16pt;
+  color: #000;
+}
+.card .card-info .card-body:hover {
   background-color: #00aa8856;
 }
-.about-me .about-info .about-body:hover .about-text {
+.card .card-info .card-body:hover .card-text {
   display: none;
 }
-.about-me .about-info .about-body:hover .about-img {
+.card .card-info .card-body:hover .card-img {
   display: none;
 }
-.about-me .about-info .about-body:hover .description {
+.card .card-info .card-body:hover .card-description {
   color: black;
   display: block;
   text-align: center;
@@ -609,28 +671,72 @@ footer:hover .social-text {
   height: 33rem;
   box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.8), -2px 0px 4px rgba(0, 0, 0, 0.8);
   background-color: white;
+  overflow-y: auto;
 }
-.content .card {
-  border: 1px solid rgba(0, 0, 0, 0.5);
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 4px rgba(0, 0, 0, 0.3);
-  font-size: 18pt;
-  margin: 2rem;
+.content #about-me {
+  font-size: 16pt;
+  margin: 1rem;
   padding: 1rem;
-  display: flex;
+  display: none;
   flex-direction: column;
   align-items: center;
 }
-.content .card .card-title {
+.content #about-me .title {
   text-align: center;
   color: #00AA88;
   margin-bottom: 1rem;
 }
-.content .card article {
+.content #about-me article {
   display: flex;
   flex-direction: row;
   align-items: start;
+  flex-wrap: wrap;
 }
-.content .card article .article-description {
+.content #about-me article .article-description {
+  margin: 0rem 0.5rem 0rem 1rem;
+}
+.content #projects {
+  font-size: 16pt;
+  margin: 1rem;
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.content #projects .title {
+  text-align: center;
+  color: #00AA88;
+  margin-bottom: 1rem;
+}
+.content #projects article {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.content #projects article .article-description {
+  margin: 0rem 0.5rem 0rem 1rem;
+}
+.content #contact {
+  font-size: 16pt;
+  margin: 1rem;
+  padding: 1rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+.content #contact .title {
+  text-align: center;
+  color: #00AA88;
+  margin-bottom: 1rem;
+}
+.content #contact article {
+  display: flex;
+  flex-direction: row;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.content #contact article .article-description {
   margin: 0rem 0.5rem 0rem 1rem;
 }
 
@@ -693,6 +799,18 @@ footer:hover .social-text {
     width: 300px;
   }
 
+  .logo-words-group {
+    top: 83%;
+  }
+  .logo-words-group .write-bar {
+    font-size: 10pt;
+    font-weight: bold;
+  }
+
+  .logo-words .letter-logo {
+    font-size: 10pt;
+  }
+
   main {
     margin: 0.5rem;
     padding: 0.5rem;
@@ -702,19 +820,37 @@ footer:hover .social-text {
     margin: 0.5rem;
     margin-bottom: 3rem;
   }
-  main .content .card {
-    box-shadow: 0px 0px 0px;
-    border: 0px;
-  }
-  main .content .card article {
+  main .content #about-me article {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  main .content .card article .about-info .about-body {
+  main .content #about-me article .about-info .about-body {
     width: 12rem;
   }
-  main .content .card article .article-description {
+  main .content #about-me article .article-description {
+    margin-top: 0.5rem;
+  }
+  main .content #projects article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .content #projects article .about-info .about-body {
+    width: 12rem;
+  }
+  main .content #projects article .article-description {
+    margin-top: 0.5rem;
+  }
+  main .content #contact article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .content #contact article .about-info .about-body {
+    width: 12rem;
+  }
+  main .content #contact article .article-description {
     margin-top: 0.5rem;
   }
   main .sidebar {

@@ -1,0 +1,37 @@
+{
+    "projects": [
+        {
+            "nombre": "Maref Group",
+            "link": "https://marefgroup.com",
+            "descriptionShort": "Aplicación android nativa",
+            "dev": "Android Studio - Kotlin", 
+            "descriptionLong": "Aplicación android para hacer cálculos y fórmulas para empresa petrolera",
+            "img": "marefgroup.jpg"
+        },
+        {
+            "nombre": "Donde Compro",
+            "link": "https://dondecompro.com",
+            "descriptionShort": "Aplicación web",
+            "dev": "PHP - MySql - HTML - CSS - JS ", 
+            "descriptionLong": "Aplicación web que compara precios de productos de los negocios registrados",
+            "img": "marefgroup.jpg"
+        },
+        {
+            "nombre": "App agrícola",
+            "link": "",
+            "descriptionShort": "Aplicación web",
+            "dev": "PHP - MySql - HTML - CSS - JS ", 
+            "descriptionLong": "Aplicación web que funciona como cuaderno de campo virtual",
+            "img": "marefgroup.jpg"
+        },
+        {
+            "nombre": "MO distribuidora",
+            "link": "https://modistribuidora.online",
+            "descriptionShort":  "Plataforma web",
+            "dev": "PHP - LARAVEL - LIVEWIRE", 
+            "descriptionLong": "Página web y plataforma de control de inventario, clientes y proveedores",
+            "img": "marefgroup.jpg"
+        }
+
+    ]
+}

@@ -1,6 +1,6 @@
 let words = [ //Array con las palabras que estarán animadas. 
     "cout<<'DESARROLLADOR-DE-SOFTWARE';",
-    "<p>-DISEÑADOR-WEB-</p>",
+    "<p>-DESARROLLADOR-WEB-FULLSTACK</p>",
     "print('AUTODIDACTA')",
     "{'EMPRENDEDOR'}"]
 let charValidate="printcousg()'<>/;{}"//letras que serán de otro color
@@ -92,12 +92,22 @@ function showContent(){
     let footer = document.getElementById("footer")
     let boton = document.getElementById("icon-responsive")
     let menu = document.getElementById("menuNav")
-    let cont = 0
+    let projects = document.getElementById("projects")
+    let aboutMe = document.getElementById("about-me")
+    let aboutMeBoton = document.getElementById("about-me-boton")
+    let projectsBoton = document.getElementById("projects-boton")
+    let projectsContent = document.getElementById("projects-content")
+    let contactBoton = document.getElementById("contact-boton")
+    let contact = document.getElementById("contact")
+    let cont = 1
     preloader.style.display = "none" //Se oculta el preloader
     body.style.display = "block"
     body.style.backgroundColor = "rgb(80, 75, 75)"
+    aboutMe.style.display = "none"
+    contact.style.display = "none"
+    projects.style.display = "flex"
     
-    boton.addEventListener("click", ()=>{
+    boton.addEventListener("click", ()=>{ //Muestra el menu de navegacion cuando la pantalla es pequeña (menor a 768px de ancho)
         if(cont){
             menu.style.display = "flex"
             cont = 0
@@ -105,9 +115,62 @@ function showContent(){
             menu.style.display = "none"
             cont ++
         }
-        
-
     })
+
+     projectsBoton.addEventListener("click", ()=>{
+        aboutMe.style.display = "none"
+        contact.style.display = "none"
+        projects.style.display = "flex"
+
+        fetch("json/projects.json")
+        .then(data=>data.json())
+        .then(data=>{
+
+            let auxContent = ""
+
+            for(i in data.projects){
+                auxContent += 
+                `<div class="card m-1">                
+                    <div class="card-info">
+                    <p class="card-title"><a href="${data.projects[i].link}" target="_blank">${data.projects[i].nombre}</a></p>
+                        
+                        <div class="card-body">
+                            <div class="card-img">
+                                <img src="assets/img/projects/${data.projects[i].img}" alt="100" width="150">
+                            </div>
+                            <div class="card-text">
+                                <P><span class="value c-primary"><strong>${data.projects[i].descriptionShort}</strong></span></P>
+                                <P><span class="value"><strong>${data.projects[i].dev}</strong></span></P>
+                            </div>    
+                            <div class="card-description">
+                                <p><strong>${data.projects[i].descriptionLong}</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>`
+            }
+
+            projectsContent.innerHTML = auxContent
+        })
+        .catch(e => {
+            projectsContent.innerHTML = `${e}`
+        })
+        
+    })
+
+    aboutMeBoton.addEventListener("click", ()=>{
+        aboutMe.style.display = "flex"
+        contact.style.display = "none"
+        projects.style.display = "none"
+    })
+
+    contactBoton.addEventListener("click", ()=>{
+        aboutMe.style.display = "none"
+        contact.style.display = "flex"
+        projects.style.display = "none"
+    })
+
+    
 
         //Si la pantalla tiene un ancho mayor a 768 px entonces el "main" es una grilla si no es 
     if (window.matchMedia("(min-width: 768px)").matches) {
