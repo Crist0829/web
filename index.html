@@ -3,7 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="App web portafolio">
+	<meta name="author" content="Crist">
+	<meta name="theme-color" content="#00AA884">
+    <link rel="manifest" href="crist.webmanifest">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="icon" href="icons/icon-32.png" type="image/x-icon">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
     <title>CRIST</title>
 </head>
@@ -18,7 +23,8 @@
            
             <nav class="navigation">
                 <div class="icon-responsive" id ="icon-responsive">
-                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-bars" id="menu-icon-bars"></i>
+                    <i class="fas fa-window-close" id="menu-icon-close"></i>
                 </div>
                 <ul id ="menuNav">
                     <li id="about-me-boton"><a href="#about-me"><i class="fa fa-user"></i> Sobre mí</a></li>
@@ -206,7 +212,7 @@
            <div id="about-me">
                 <h3 class="title">SOBRE MÍ</h3>
                 <article> 
-                    <div class="card">                
+                    <div class="card m-1">                
                         <div class="card-info">
                             <p class="card-title">CRISTIAN JIMÉNEZ</p>
                             <div class="card-body">
@@ -226,9 +232,8 @@
                         </div>
                     </div>
                     <div class="article-description">
-                        <p>Soy un apasionado por la informática, la física
-                             </p>
-                        <p></p>
+                        <p class="m-1">"Me apasionan las matemáticas y la informática, "</p>
+                        <p class="m-1"></p>
                     </div>
     
                 </article>

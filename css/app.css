@@ -643,6 +643,9 @@ footer:hover .social-text {
 .navigation .icon-responsive {
   display: none;
 }
+.navigation .icon-responsive #menu-icon-close {
+  display: none;
+}
 .navigation ul {
   display: flex;
   flex-direction: row;
@@ -690,6 +693,7 @@ footer:hover .social-text {
   display: flex;
   flex-direction: row;
   align-items: start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .content #about-me article .article-description {
@@ -712,6 +716,7 @@ footer:hover .social-text {
   display: flex;
   flex-direction: row;
   align-items: start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .content #projects article .article-description {
@@ -734,6 +739,7 @@ footer:hover .social-text {
   display: flex;
   flex-direction: row;
   align-items: start;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .content #contact article .article-description {

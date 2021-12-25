@@ -1,3 +1,9 @@
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('./sw.js')
+      .then(reg => console.log('Registro de SW exitoso', reg))
+      .catch(err => console.warn('Error al tratar de registrar el sw', err))
+  }
+
 let words = [ //Array con las palabras que estarán animadas. 
     "cout<<'DESARROLLADOR-DE-SOFTWARE';",
     "<p>-DESARROLLADOR-WEB-FULLSTACK</p>",
@@ -92,6 +98,8 @@ function showContent(){
     let footer = document.getElementById("footer")
     let boton = document.getElementById("icon-responsive")
     let menu = document.getElementById("menuNav")
+    let iconMenu = document.getElementById("menu-icon-bars")
+    let iconMenuClose = document.getElementById("menu-icon-close")
     let projects = document.getElementById("projects")
     let aboutMe = document.getElementById("about-me")
     let aboutMeBoton = document.getElementById("about-me-boton")
@@ -103,16 +111,20 @@ function showContent(){
     preloader.style.display = "none" //Se oculta el preloader
     body.style.display = "block"
     body.style.backgroundColor = "rgb(80, 75, 75)"
-    aboutMe.style.display = "none"
+    aboutMe.style.display = "flex"
     contact.style.display = "none"
-    projects.style.display = "flex"
+    projects.style.display = "none"
     
     boton.addEventListener("click", ()=>{ //Muestra el menu de navegacion cuando la pantalla es pequeña (menor a 768px de ancho)
         if(cont){
             menu.style.display = "flex"
+            iconMenu.style.display = "none";
+            iconMenuClose.style.display = "block";
             cont = 0
         }else{
             menu.style.display = "none"
+            iconMenu.style.display = "block";
+            iconMenuClose.style.display = "none";
             cont ++
         }
     })
@@ -143,7 +155,7 @@ function showContent(){
                                 <P><span class="value"><strong>${data.projects[i].dev}</strong></span></P>
                             </div>    
                             <div class="card-description">
-                                <p><strong>${data.projects[i].descriptionLong}</strong></p>
+                                <p><strong>${data.projects[i].descriptionLong}.</strong></p>
                             </div>
                         </div>
                     </div>

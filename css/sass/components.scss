@@ -459,6 +459,9 @@
 
     .icon-responsive{
         display: none;
+        #menu-icon-close{
+            display: none;
+        }
     }
     
     ul{
@@ -489,6 +492,8 @@
             }
 
         }
+
+        
 
         
     }
