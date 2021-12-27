@@ -13,14 +13,11 @@
     <title>CRIST</title>
 </head>
 <body id = "body">
-
     <div class="preloader" id = "preloader">
         <span id="preloader-c"></span>
     </div>
     <main id ="main">
-        
         <header>
-           
             <nav class="navigation">
                 <div class="icon-responsive" id ="icon-responsive">
                     <i class="fas fa-bars" id="menu-icon-bars"></i>
@@ -69,11 +66,16 @@
                 </div>
         </header>
         <div class="sidebar">
-            <div class="side-title">HABILIDADES</div>
-            <div class="skills no-selection">
-
-                <div class="frontend">
-                    <div class="progress-title">Front End</div>
+            <div class="side-title">
+                <div class="icon-side">
+                    <i class="fas fa-arrow-right" id="side-icon-right"></i>
+                    <i class="fas fa-arrow-left" id="side-icon-left"></i>
+                </div>
+                <p class = "no-selection" id="side-title-text">HABILIDADES</p>
+            </div>
+            <div class="skills no-selection" id="skills">
+                <div class="side-card border-blue-2">
+                    <div class="side-card-title c-blue">Front End</div>
                     <div class="container-main-progress">
                         <div class="skill-icon i-html">
                             <i class="fab fa-html5"></i>
@@ -116,8 +118,8 @@
                     </div>
                 </div>
 
-                <div class="backend">
-                    <div class="progress-title">Back End</div>
+                <div class="side-card border-red-2">
+                    <div class="side-card-title c-red">Back End</div>
                     <div class="container-main-progress">
                         <div class="skill-icon i-php">
                             <i class="fab fa-php"></i>
@@ -142,7 +144,7 @@
                             <div class="skill sql">MYSQL 80%</div>
                         </div>
                     </div>
-                    <hr>
+                    <hr class="border-red-1">
                     <div class="container-main-progress">
                         <div class="skill-icon i-node">
                             <i class="fab fa-node-js"></i>
@@ -156,13 +158,13 @@
                             <i class="fas fa-database"></i>
                         </div>
                         <div class="progress">
-                            <div class="skill mongo">MONGODB 50%</div>
+                            <div class="skill mongo">MONGO 50%</div>
                         </div>
                     </div>
                 </div>
 
-                <div class="others">
-                    <div class="progress-title">Otros</div>
+                <div class="side-card border-green-2">
+                    <div class="side-card-title c-green">Otros</div>
                     <div class="container-main-progress">
                         <div class="skill-icon i-python">
                             <i class="fab fa-python"></i>
@@ -187,7 +189,7 @@
                             <div class="skill c">C++ 60%</div>
                         </div>
                     </div>
-                    <hr>
+                    <hr class="border-green-1">
                     <div class="container-main-progress">
                         <div class="skill-icon i-git">
                             <i class="fab fa-git-square"></i>
@@ -206,6 +208,43 @@
                     </div>
                 </div>
 
+            </div>
+            <div class="qualities no-selection" id="qualities">
+                <div class="side-card border-blue-2">
+                    <div class="side-card-title c-blue">Sociales</div>
+                    <div class="side-card-body">
+                        <ul class="list-qualities">
+                            <li><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Comunicativo</span></li>
+                            <li><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Trabajo en equipo</span></li>
+                            <li><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Tolerante</span></li>
+                            <li><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Respetuoso</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="side-card border-red-2">
+                    <div class="side-card-title c-red">Laborales</div>
+                    <div class="side-card-body">
+                        <ul class="list-qualities">
+                            <li><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Responsable</span></li>
+                            <li><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Puntual</span></li>
+                            <li><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Proactivo</span></li>
+                            <li><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Adaptabilidad</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="side-card border-green-2">
+                    <div class="side-card-title c-green">Personales</div>
+                    <div class="side-card-body">
+                        <ul class="list-qualities">
+                            <li><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Creativo</span></li>
+                            <li><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Métodico</span></li>
+                            <li><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Paciente</span></li>
+                            <li><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Ordenado</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                
             </div>
         </div>
         <div class="content">

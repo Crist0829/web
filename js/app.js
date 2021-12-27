@@ -72,6 +72,7 @@ function writeWords(){
 }
 
 function preloaderAnimation(){
+    preloaderAnimation()
     let wordcontainer = document.getElementById("preloader-c")
     let word = "CARGANDO"
     let arrayWord = word.split("")
@@ -87,9 +88,41 @@ function preloaderAnimation(){
     }, 150)
 }
 
-preloaderAnimation()
+
 
 function showContent(){
+    
+
+    //--------------------Sidebar--------------------------------//
+    let botonSideRight = document.getElementById("side-icon-right")
+    let botonSideLeft = document.getElementById("side-icon-left")
+    let textSide = document.getElementById("side-title-text")
+    let skills = document.getElementById("skills")
+    let qualities = document.getElementById("qualities")
+    //botones del side bar para mostrar las habilidades y cualidades
+    botonSideRight.addEventListener("click", ()  => {
+        if(contSide){
+            textSide.innerHTML = "CUALIDADES"
+            skills.style.display = "none"
+            qualities.style.display = "flex"
+            botonSideLeft.style.display = "block";
+            botonSideRight.style.display = "none";
+            contSide = 0
+        }
+    })
+
+    botonSideLeft.addEventListener("click", () => {
+        if(contSide === 0){
+            botonSideRight.style.display = "block";
+            textSide.innerHTML = "HABILIDADES"
+            qualities.style.display = "none"
+            skills.style.display = "flex";
+            botonSideLeft.style.display = "none";
+            contSide ++
+        }
+    })
+    //-----------------------------------------------------------//
+
     /*El main y el footer están ocultos (dispaly:none) y cuando el documento está cargado se muestran
     y se oculta el preloader*/
     let main = document.getElementById("main")
@@ -98,8 +131,33 @@ function showContent(){
     let footer = document.getElementById("footer")
     let boton = document.getElementById("icon-responsive")
     let menu = document.getElementById("menuNav")
-    let iconMenu = document.getElementById("menu-icon-bars")
-    let iconMenuClose = document.getElementById("menu-icon-close")
+    let botonMenu = document.getElementById("menu-icon-bars")
+    let botonMenuClose = document.getElementById("menu-icon-close")
+    let contMenu = 1
+    let contSide = 1
+    preloader.style.display = "none" //Se oculta el preloader
+    body.style.display = "block"
+    body.style.backgroundColor = "rgb(80, 75, 75)"
+    footer.style.display = "flex" 
+    
+    
+
+    boton.addEventListener("click", ()=>{ //Muestra el menu de navegacion cuando la pantalla es pequeña (menor a 768px de ancho)
+        if(contMenu){
+            menu.style.display = "flex"
+            botonMenu.style.display = "none";
+            botonMenuClose.style.display = "block";
+            contMenu = 0
+        }else{
+            menu.style.display = "none"
+            botonMenu.style.display = "block";
+            botonMenuClose.style.display = "none";
+            contMenu ++
+        }
+    })
+
+    
+//-------Lo muestra las diferentes páginas en la sección de content---------------//
     let projects = document.getElementById("projects")
     let aboutMe = document.getElementById("about-me")
     let aboutMeBoton = document.getElementById("about-me-boton")
@@ -107,28 +165,12 @@ function showContent(){
     let projectsContent = document.getElementById("projects-content")
     let contactBoton = document.getElementById("contact-boton")
     let contact = document.getElementById("contact")
-    let cont = 1
-    preloader.style.display = "none" //Se oculta el preloader
-    body.style.display = "block"
-    body.style.backgroundColor = "rgb(80, 75, 75)"
-    aboutMe.style.display = "flex"
+
+    aboutMe.style.display = "flex" //Es el contenido que al cargar la página es visible
     contact.style.display = "none"
     projects.style.display = "none"
-    
-    boton.addEventListener("click", ()=>{ //Muestra el menu de navegacion cuando la pantalla es pequeña (menor a 768px de ancho)
-        if(cont){
-            menu.style.display = "flex"
-            iconMenu.style.display = "none";
-            iconMenuClose.style.display = "block";
-            cont = 0
-        }else{
-            menu.style.display = "none"
-            iconMenu.style.display = "block";
-            iconMenuClose.style.display = "none";
-            cont ++
-        }
-    })
 
+    //Muestra los projectos (Los carga desde el archivo json/projects.json)
      projectsBoton.addEventListener("click", ()=>{
         aboutMe.style.display = "none"
         contact.style.display = "none"
@@ -139,7 +181,6 @@ function showContent(){
         .then(data=>{
 
             let auxContent = ""
-
             for(i in data.projects){
                 auxContent += 
                 `<div class="card m-1">                
@@ -170,24 +211,27 @@ function showContent(){
         
     })
 
+    //Muestra "sobre mí"
     aboutMeBoton.addEventListener("click", ()=>{
         aboutMe.style.display = "flex"
         contact.style.display = "none"
         projects.style.display = "none"
     })
 
+    //Muestra el formulario de contacto
     contactBoton.addEventListener("click", ()=>{
         aboutMe.style.display = "none"
         contact.style.display = "flex"
         projects.style.display = "none"
     })
 
-    
+//--------------------------------------------------------------------------------//
 
-        //Si la pantalla tiene un ancho mayor a 768 px entonces el "main" es una grilla si no es 
+
+        //Si la pantalla tiene un ancho mayor a 768 px entonces el "main" es unfrid sino es flex 
     if (window.matchMedia("(min-width: 768px)").matches) {
         main.style.display = "grid"
-        main.style.gridTemplateColumns = "20rem auto"
+        main.style.gridTemplateColumns = "24rem auto"
         main.style.gridTemplateRows = "auto auto"
         main.style.gap = "1rem"
         main.style.margin = "1rem"
@@ -199,9 +243,8 @@ function showContent(){
         main.style.padding = "0.5rem"
       }
 
-      footer.style.display = "flex" 
+      
 }
-
 
 window.onload = () => {
     showContent()

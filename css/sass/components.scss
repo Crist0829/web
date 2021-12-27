@@ -32,25 +32,116 @@
 .m-1{
     margin: 0.5rem;
 }
-
 .m-2{
     margin: 1rem;
 }
-
 .m-3{
     margin: 2rem;
 }
-
 .m-4{
     margin: 3rem;
 }
 
+.p-1{
+    padding: 0.5rem;
+}
+.p-2{
+    padding: 1rem;
+}
+.p-3{
+    padding: 2rem;
+}
+.p-1{
+    padding: 3rem;
+}
+
+
+
+.border-1{
+    border: 1px solid #000!important;
+}
+.border-2{
+    border: 3px solid #000!important;
+}.border-3{
+    border: 5px solid #000!important;
+}
+
+.border-yellow-1{
+    border: 1px solid $yellow!important;
+}
+.border-yellow-2{
+    border: 3px solid $yellow!important;
+}.border-yellow-3{
+    border: 5px solid $yellow!important;
+}
+
+.border-green-1{
+    border: 1px solid $green!important;
+}
+.border-green-2{
+    border: 3px solid $green!important;
+}.border-green-3{
+    border: 5px solid $green!important;
+}
+
+.border-blue-1{
+    border: 1px solid $blue!important;
+}
+.border-blue-2{
+    border: 3px solid $blue!important;
+}.border-blue-3{
+    border: 5px solid $blue!important;
+}
+
+.border-primary-1{
+    border: 1px solid $primary!important;
+}
+.border-primary-2{
+    border: 3px solid $primary!important;
+}.border-primary-3{
+    border: 5px solid $primary!important;
+}
+
+.border-red-1{
+    border: 1px solid $red!important;
+}
+.border-red-2{
+    border: 3px solid $red!important;
+}.border-red-3{
+    border: 5px solid $red!important;
+}
+
+
 .bg-primary{
     background-color: $primary;
+}
+.bg-yellow{
+    color:$yellow!important;
+}
+.bg-green{
+    color: $green!important;
+}
+.bg-blue{
+    color: $blue!important;
+}
+.bg-red{
+    color: $blue!important;
 }
 
 .c-primary{
     color: $primary;
+}
+.c-yellow{
+    color:$yellow!important;
+}
+.c-green{
+    color: $green!important;
+}
+.c-blue{
+    color: $blue!important;
+}
+.c-red{
+    color: $red!important;
 }
 
 
@@ -112,82 +203,31 @@
 .skills{
     display: flex;
     flex-direction: column;
-    justify-content: start;
+    justify-content: center;
     align-items:center;
     margin: 1rem 0rem 1rem 0rem;
     }
 
 .skill{
-        text-align: center;
-        color: white;
+    text-align: center;
+    color: white;
 }
 
-.backend{
-    @include progressContainer(rgba(170, 72, 15, 1));
+.side-card{
+    @include sideCard();
     .container-main-progress{
         display: flex;
         flex-direction: row;
         align-items:center;
         justify-content:center;
+
         .skill-icon{
             font-size: 32px;
             margin-right: 1rem;
         }
-        .i-php{
-            margin: 0.1rem;
-            margin-right: 0.4rem;
-            @include iconProgres(#8993be, 26px)
-        }
-        .i-laravel{
-            margin-right: 0.9rem;
-            @include iconProgres(#F05340, 26px)
-            
-        }
-        .i-sql{
-            @include iconProgres(#00758F, 28px)
-        }
-        .i-node{
-            @include iconProgres(#3C873A, 28px)
-        }
-        .i-mongo{
-            @include iconProgres(#3C873A, 28px)
-        }
-    .progress{
-        width: 10rem;
-        background-color: rgb(100, 100, 100, 0.5);
-        border-radius: 0.2rem;
-        .php{
-            @include progressBar(#8993be, 85%)
-        }
-        .laravel{
-            @include progressBar(#F05340, 80%)
-        }
-        .sql{
-            @include progressBar(#F29111, 80%)
-        }
-        .node{
-            @include progressBar(#3C873A, 70%)
-        }
-        .mongo{
-            @include progressBar(#3C873A, 50%)
-            
-        }
-    }
-    
-    }
+        /*---Iconos---*/
 
-}
-
-.frontend{
-    @include progressContainer(#2965f1);
-    .container-main-progress{
-        display: flex;
-        flex-direction: row;
-        align-items:center;
-        justify-content:center;
-        .skill-icon{
-            font-size: 32px;
-            margin-right: 0.5rem;
+        //---------------------Front end-----------------------//
         }
         .i-html{
             @include iconProgres(rgba(170, 72, 15, 1), 32px)
@@ -204,45 +244,32 @@
         .i-react{
             @include iconProgres(#61DBFB, 26px)
         }
-    .progress{
-        width: 10rem;
-        background-color: rgb(100, 100, 100, 0.5);
-        border-radius: 0.2rem;
-        .html{
-            @include progressBar(rgba(170, 72, 15, 1), 93%)
+        //--------------------------------------------------------//
+
+        //----------------------Back End--------------------------//
+        .i-php{
+            margin-right: 0.2rem;
+            @include iconProgres(#8993be, 20px)
         }
-        .css{
-            @include progressBar(#2965f1, 85%)
+        .i-laravel{
+            margin-right: 0.9rem;
+            @include iconProgres(#F05340, 26px)
             
         }
-        .js{
-            @include progressBar(#c9b114, 80%)
+        .i-sql{
+            @include iconProgres(#00758F, 28px)
         }
-        .vue{
-            @include progressBar(#41B883, 80%)
+        .i-node{
+            @include iconProgres(#3C873A, 28px)
         }
-        .react{
-            @include progressBar(#61DBFB, 50%)
+        .i-mongo{
+            @include iconProgres(#3C873A, 28px)
         }
-    }
-    
-}
-}
+        //--------------------------------------------------------//
 
-.others{
-    @include progressContainer(rgb(15, 170, 49));
-    
-    .container-main-progress{
-        display: flex;
-        flex-direction: row;
-        align-items:center;
-        justify-content:center;
-        .skill-icon{
-            font-size: 32px;
-            margin-right: 1rem;
-        }
+        //---------------- Otros ---------------------------------//
         .i-python{
-            @include iconProgres(#4B8BBE, 32px);
+            @include iconProgres(#4B8BBE, 30px);
         }
         .i-java{
             @include iconProgres(#5382a1, 32px);
@@ -263,10 +290,54 @@
             color: #41B883;
             @include iconProgres(#41B883, 28px);
         }
+        //-------------------------------------------------------//
+
     .progress{
-        width: 10rem;
+        width: 12rem;
         background-color: rgb(100, 100, 100, 0.5);
-        border-radius: 0.2rem;
+        border-radius: 0.3rem;
+
+        /*---Barras de progreso---*/
+
+        //---------Front End---------//
+        .html{
+            @include progressBar(rgba(170, 72, 15, 1), 93%)
+        }
+        .css{
+            @include progressBar(#2965f1, 85%)
+            
+        }
+        .js{
+            @include progressBar(#c9b114, 80%)
+        }
+        .vue{
+            @include progressBar(#41B883, 80%)
+        }
+        .react{
+            @include progressBar(#61DBFB, 50%)
+        }
+        //----------------------------//
+
+        //---------------Back End----------------//
+        .php{
+            @include progressBar(#8993be, 85%)
+        }
+        .laravel{
+            @include progressBar(#F05340, 80%)
+        }
+        .sql{
+            @include progressBar(#F29111, 80%)
+        }
+        .node{
+            @include progressBar(#3C873A, 70%)
+        }
+        .mongo{
+            @include progressBar(#3C873A, 50%)
+            
+        }
+        //------------------------------------//
+
+        //------------ Otros -----------------//
         .python{
             @include progressBar(#4B8BBE, 85%);
         }
@@ -282,14 +353,23 @@
         .docker{
             @include progressBar(#0db7ed, 60%);
         }
-
-        
+        //------------------------------------//
     }
     
     }
 
-}
+
 //------------------------------------//
+
+//-------Qualities bar-----------------//
+.qualities{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    margin: 1rem 0rem 1rem 0rem;
+    }
+//-------------------------------------//
 
 //-------sidebar---------------//
 .sidebar{
@@ -298,15 +378,70 @@
     height: 52rem;
     overflow-y: auto;
     grid-row: 1 / 3;
-    white-space: nowrap;
-
+    white-space: wrap;
     .side-title{
         margin: 0px;
-        padding: 0.5rem;
+        padding: 0.8rem;
         background-color: $primary;
         color: #fff;
-        font-size:24pt;
+        font-size:22pt;
         text-align: center;
+        display: flex;
+        flex: row;
+
+        #side-icon-left{
+            border: solid 1px #fff;
+            border-radius: 0.3rem;
+            padding: 0.3rem;
+            margin-left: 0.5rem;
+            margin-right: 1rem;
+            font-size: 18pt;
+            transition: all ease 0.5s;
+            cursor: pointer;
+            display: none;
+        }
+
+        #side-icon-right{
+            border: solid 1px #fff;
+            border-radius: 0.3rem;
+            padding: 0.3rem;
+            margin-left: 0.5rem;
+            margin-right: 1rem;
+            font-size: 18pt;
+            transition: all ease 0.5s;
+            cursor: pointer;
+        }
+
+        #side-icon-right:hover{
+            background-color: rgba(0, 0, 0, 0.322);
+        }
+
+        #side-icon-left:hover{
+            background-color: rgba(0, 0, 0, 0.322);
+        }
+
+    }
+
+}
+
+.list-qualities{
+    list-style: none;
+
+    li{
+        width: 12rem;
+        padding: 0.3rem;
+        margin: 0.3rem;
+
+        .list-item-icon{
+            font-size: 10pt;
+            margin: 0.3rem;
+            padding: 0.3rem;
+        }
+
+        .list-item-text{
+            font-size: 15pt;
+        }
+
     }
 }
 //----------------------------//
@@ -501,8 +636,6 @@
 //------------------------------------//
 
 //----------Content-------------------//
-
-
 .content{
     height: 33rem;
     box-shadow: 4px -4px 8px rgba(0,0,0,0.8), -2px 0px 4px rgba(0,0,0,0.8);

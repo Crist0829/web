@@ -14,14 +14,11 @@ body {
 
 main {
   display: none;
-  /*
-  display:grid;
-  grid-template-columns: 20rem auto;
+  grid-template-columns: 25rem auto;
   grid-template-rows: auto auto;
   gap: 2rem;
   margin: 1rem;
   margin-bottom: 5rem;
-  */
 }
 
 header {
@@ -143,12 +140,132 @@ footer:hover .social-text {
   margin: 3rem;
 }
 
+.p-1 {
+  padding: 0.5rem;
+}
+
+.p-2 {
+  padding: 1rem;
+}
+
+.p-3 {
+  padding: 2rem;
+}
+
+.p-1 {
+  padding: 3rem;
+}
+
+.border-1 {
+  border: 1px solid #000 !important;
+}
+
+.border-2 {
+  border: 3px solid #000 !important;
+}
+
+.border-3 {
+  border: 5px solid #000 !important;
+}
+
+.border-yellow-1 {
+  border: 1px solid #dabe0b !important;
+}
+
+.border-yellow-2 {
+  border: 3px solid #dabe0b !important;
+}
+
+.border-yellow-3 {
+  border: 5px solid #dabe0b !important;
+}
+
+.border-green-1 {
+  border: 1px solid #0fa863 !important;
+}
+
+.border-green-2 {
+  border: 3px solid #0fa863 !important;
+}
+
+.border-green-3 {
+  border: 5px solid #0fa863 !important;
+}
+
+.border-blue-1 {
+  border: 1px solid #2965f1 !important;
+}
+
+.border-blue-2 {
+  border: 3px solid #2965f1 !important;
+}
+
+.border-blue-3 {
+  border: 5px solid #2965f1 !important;
+}
+
+.border-primary-1 {
+  border: 1px solid #00AA88 !important;
+}
+
+.border-primary-2 {
+  border: 3px solid #00AA88 !important;
+}
+
+.border-primary-3 {
+  border: 5px solid #00AA88 !important;
+}
+
+.border-red-1 {
+  border: 1px solid #e73a27 !important;
+}
+
+.border-red-2 {
+  border: 3px solid #e73a27 !important;
+}
+
+.border-red-3 {
+  border: 5px solid #e73a27 !important;
+}
+
 .bg-primary {
   background-color: #00AA88;
 }
 
+.bg-yellow {
+  color: #dabe0b !important;
+}
+
+.bg-green {
+  color: #0fa863 !important;
+}
+
+.bg-blue {
+  color: #2965f1 !important;
+}
+
+.bg-red {
+  color: #2965f1 !important;
+}
+
 .c-primary {
   color: #00AA88;
+}
+
+.c-yellow {
+  color: #dabe0b !important;
+}
+
+.c-green {
+  color: #0fa863 !important;
+}
+
+.c-blue {
+  color: #2965f1 !important;
+}
+
+.c-red {
+  color: #e73a27 !important;
 }
 
 .header-content {
@@ -205,7 +322,7 @@ footer:hover .social-text {
 .skills {
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: center;
   align-items: center;
   margin: 1rem 0rem 1rem 0rem;
 }
@@ -215,286 +332,215 @@ footer:hover .social-text {
   color: white;
 }
 
-.backend {
+.side-card {
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: start;
-  border: 2px solid #aa480f;
+  align-items: center;
+  border: 2px solid #000;
   border-radius: 0.5rem;
+  margin: 0.8rem;
   padding: 1rem;
-  margin: 1rem;
-  height: 100%;
 }
-.backend hr {
-  border-top: 2px solid #aa480f;
-  margin: 0.3rem;
+.side-card hr {
+  border-top: 2px solid #000;
+  margin: 0.5rem;
   width: 100%;
 }
-.backend .progress-title {
+.side-card .side-card-title {
   background-color: white;
   position: absolute;
   float: left;
-  bottom: 92%;
+  bottom: 93%;
   padding: 0.3rem;
-  font-size: large;
-  color: #aa480f;
+  font-size: 16pt;
+  color: #000;
 }
-.backend .container-main-progress {
+.side-card .side-card-body {
+  margin: 0.5rem;
+}
+.side-card .container-main-progress {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  /*---Iconos---*/
 }
-.backend .container-main-progress .skill-icon {
+.side-card .container-main-progress .skill-icon {
   font-size: 32px;
   margin-right: 1rem;
 }
-.backend .container-main-progress .i-php {
-  margin: 0.1rem;
-  margin-right: 0.4rem;
+.side-card .i-html {
+  font-size: 32px !important;
+  color: #aa480f;
+}
+.side-card .i-css {
+  font-size: 32px !important;
+  color: #2965f1;
+}
+.side-card .i-js {
+  font-size: 28px !important;
+  color: #c9b114;
+}
+.side-card .i-vue {
+  font-size: 28px !important;
+  color: #41B883;
+}
+.side-card .i-react {
   font-size: 26px !important;
+  color: #61DBFB;
+}
+.side-card .i-php {
+  margin-right: 0.2rem;
+  font-size: 20px !important;
   color: #8993be;
 }
-.backend .container-main-progress .i-laravel {
+.side-card .i-laravel {
   margin-right: 0.9rem;
   font-size: 26px !important;
   color: #F05340;
 }
-.backend .container-main-progress .i-sql {
+.side-card .i-sql {
   font-size: 28px !important;
   color: #00758F;
 }
-.backend .container-main-progress .i-node {
+.side-card .i-node {
   font-size: 28px !important;
   color: #3C873A;
 }
-.backend .container-main-progress .i-mongo {
+.side-card .i-mongo {
   font-size: 28px !important;
   color: #3C873A;
 }
-.backend .container-main-progress .progress {
-  width: 10rem;
-  background-color: rgba(100, 100, 100, 0.5);
-  border-radius: 0.2rem;
-}
-.backend .container-main-progress .progress .php {
-  width: 85%;
-  background-color: #8993be;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-.backend .container-main-progress .progress .laravel {
-  width: 80%;
-  background-color: #F05340;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-.backend .container-main-progress .progress .sql {
-  width: 80%;
-  background-color: #F29111;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-.backend .container-main-progress .progress .node {
-  width: 70%;
-  background-color: #3C873A;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-.backend .container-main-progress .progress .mongo {
-  width: 50%;
-  background-color: #3C873A;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-
-.frontend {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  border: 2px solid #2965f1;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin: 1rem;
-  height: 100%;
-}
-.frontend hr {
-  border-top: 2px solid #2965f1;
-  margin: 0.3rem;
-  width: 100%;
-}
-.frontend .progress-title {
-  background-color: white;
-  position: absolute;
-  float: left;
-  bottom: 92%;
-  padding: 0.3rem;
-  font-size: large;
-  color: #2965f1;
-}
-.frontend .container-main-progress {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.frontend .container-main-progress .skill-icon {
-  font-size: 32px;
-  margin-right: 0.5rem;
-}
-.frontend .container-main-progress .i-html {
-  font-size: 32px !important;
-  color: #aa480f;
-}
-.frontend .container-main-progress .i-css {
-  font-size: 32px !important;
-  color: #2965f1;
-}
-.frontend .container-main-progress .i-js {
-  font-size: 28px !important;
-  color: #c9b114;
-}
-.frontend .container-main-progress .i-vue {
-  font-size: 28px !important;
-  color: #41B883;
-}
-.frontend .container-main-progress .i-react {
-  font-size: 26px !important;
-  color: #61DBFB;
-}
-.frontend .container-main-progress .progress {
-  width: 10rem;
-  background-color: rgba(100, 100, 100, 0.5);
-  border-radius: 0.2rem;
-}
-.frontend .container-main-progress .progress .html {
-  width: 93%;
-  background-color: #aa480f;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-.frontend .container-main-progress .progress .css {
-  width: 85%;
-  background-color: #2965f1;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-.frontend .container-main-progress .progress .js {
-  width: 80%;
-  background-color: #c9b114;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-.frontend .container-main-progress .progress .vue {
-  width: 80%;
-  background-color: #41B883;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-.frontend .container-main-progress .progress .react {
-  width: 50%;
-  background-color: #61DBFB;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
-  font-size: 13pt;
-}
-
-.others {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  border: 2px solid #0faa31;
-  border-radius: 0.5rem;
-  padding: 1rem;
-  margin: 1rem;
-  height: 100%;
-}
-.others hr {
-  border-top: 2px solid #0faa31;
-  margin: 0.3rem;
-  width: 100%;
-}
-.others .progress-title {
-  background-color: white;
-  position: absolute;
-  float: left;
-  bottom: 92%;
-  padding: 0.3rem;
-  font-size: large;
-  color: #0faa31;
-}
-.others .container-main-progress {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-.others .container-main-progress .skill-icon {
-  font-size: 32px;
-  margin-right: 1rem;
-}
-.others .container-main-progress .i-python {
-  font-size: 32px !important;
+.side-card .i-python {
+  font-size: 30px !important;
   color: #4B8BBE;
 }
-.others .container-main-progress .i-java {
+.side-card .i-java {
   font-size: 32px !important;
   color: #5382a1;
 }
-.others .container-main-progress .i-c {
+.side-card .i-c {
   font-size: 32px !important;
   color: #000;
 }
-.others .container-main-progress .i-git {
+.side-card .i-git {
   font-size: 28px !important;
   color: #F1502F;
 }
-.others .container-main-progress .i-docker {
+.side-card .i-docker {
   font-size: 20px !important;
   color: #0db7ed;
 }
-.others .container-main-progress .i-vue {
+.side-card .i-vue {
   font-size: 28px !important;
   color: #41B883;
   font-size: 28px !important;
   color: #41B883;
 }
-.others .container-main-progress .progress {
-  width: 10rem;
+.side-card .progress {
+  width: 12rem;
   background-color: rgba(100, 100, 100, 0.5);
-  border-radius: 0.2rem;
+  border-radius: 0.3rem;
+  /*---Barras de progreso---*/
 }
-.others .container-main-progress .progress .python {
+.side-card .progress .html {
+  width: 93%;
+  background-color: #aa480f;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .css {
+  width: 85%;
+  background-color: #2965f1;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .js {
+  width: 80%;
+  background-color: #c9b114;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .vue {
+  width: 80%;
+  background-color: #41B883;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .react {
+  width: 50%;
+  background-color: #61DBFB;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .php {
+  width: 85%;
+  background-color: #8993be;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .laravel {
+  width: 80%;
+  background-color: #F05340;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .sql {
+  width: 80%;
+  background-color: #F29111;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .node {
+  width: 70%;
+  background-color: #3C873A;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .mongo {
+  width: 50%;
+  background-color: #3C873A;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
+  font-size: 13pt;
+}
+.side-card .progress .python {
   width: 85%;
   background-color: #4B8BBE;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
 }
-.others .container-main-progress .progress .java {
+.side-card .progress .java {
   width: 80%;
   background-color: #5382a1;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
 }
-.others .container-main-progress .progress .c {
+.side-card .progress .c {
   width: 80%;
   background-color: #000;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
 }
-.others .container-main-progress .progress .git {
+.side-card .progress .git {
   width: 80%;
   background-color: #F1502F;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
 }
-.others .container-main-progress .progress .docker {
+.side-card .progress .docker {
   width: 60%;
   background-color: #0db7ed;
-  border-radius: 0.2rem 0rem 0rem 0.2rem;
+  border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
+}
+
+.qualities {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0rem 1rem 0rem;
 }
 
 .sidebar {
@@ -503,15 +549,61 @@ footer:hover .social-text {
   height: 52rem;
   overflow-y: auto;
   grid-row: 1/3;
-  white-space: nowrap;
+  white-space: wrap;
 }
 .sidebar .side-title {
   margin: 0px;
-  padding: 0.5rem;
+  padding: 0.8rem;
   background-color: #00AA88;
   color: #fff;
-  font-size: 24pt;
+  font-size: 22pt;
   text-align: center;
+  display: flex;
+  flex: row;
+}
+.sidebar .side-title #side-icon-left {
+  border: solid 1px #fff;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  font-size: 18pt;
+  transition: all ease 0.5s;
+  cursor: pointer;
+  display: none;
+}
+.sidebar .side-title #side-icon-right {
+  border: solid 1px #fff;
+  border-radius: 0.3rem;
+  padding: 0.3rem;
+  margin-left: 0.5rem;
+  margin-right: 1rem;
+  font-size: 18pt;
+  transition: all ease 0.5s;
+  cursor: pointer;
+}
+.sidebar .side-title #side-icon-right:hover {
+  background-color: rgba(0, 0, 0, 0.322);
+}
+.sidebar .side-title #side-icon-left:hover {
+  background-color: rgba(0, 0, 0, 0.322);
+}
+
+.list-qualities {
+  list-style: none;
+}
+.list-qualities li {
+  width: 12rem;
+  padding: 0.3rem;
+  margin: 0.3rem;
+}
+.list-qualities li .list-item-icon {
+  font-size: 10pt;
+  margin: 0.3rem;
+  padding: 0.3rem;
+}
+.list-qualities li .list-item-text {
+  font-size: 15pt;
 }
 
 .logo-main {
