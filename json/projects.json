@@ -2,7 +2,7 @@
     "projects": [
         {
             "nombre": "Maref Group",
-            "link": "https://marefgroup.com",
+            "link": "https://maref.com.ar",
             "descriptionShort": "Aplicación android nativa",
             "dev": "Android Studio - Kotlin", 
             "descriptionLong": "Aplicación android para hacer cálculos y fórmulas para empresa petrolera",
@@ -10,7 +10,7 @@
         },
         {
             "nombre": "Donde Compro",
-            "link": "https://dondecompro.com",
+            "link": "https://dondecompro.com.ar",
             "descriptionShort": "Aplicación web",
             "dev": "PHP - MySql - HTML - CSS - JS ", 
             "descriptionLong": "Aplicación web que compara precios de productos de los negocios registrados",
@@ -31,7 +31,16 @@
             "dev": "PHP - LARAVEL - LIVEWIRE", 
             "descriptionLong": "Página web y plataforma de control de inventario, clientes y proveedores",
             "img": "marefgroup.jpg"
+        },
+        {
+            "nombre": "El juego de la vida",
+            "link": "https://crist0829.github.io/the-game-of-life/",
+            "descriptionShort":  "Aplicación web",
+            "dev": "HTML-CSS-JAVASCRIPT", 
+            "descriptionLong": "Versión web del juego de la vida de John Conway utilizando JS, HTML y CSS",
+            "img": "marefgroup.jpg"
         }
+        
 
     ]
 }

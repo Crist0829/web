@@ -1,3 +1,16 @@
+@media (max-width: 1400px){
+    @media (max-height: 768px){
+        .sidebar{
+            height: 42rem;
+        }
+    
+        .content{
+            height: 23rem;
+        }
+    
+    }
+}
+
 @media (max-width:1200px){
     header{
         .header-content{
@@ -7,9 +20,33 @@
             }
         }
     }
+
 }
 
+@media (max-width: 1024px){
+    @media (max-height: 768px){
+        .sidebar{
+            height: 48rem;
+        }
+    
+        .content{
+            height: 29rem;
+        }
+    
+    }
+}
+
+
+
 @media (max-width: 940px){
+
+    .content{
+        height: 100%;
+    }
+    .sidebar{
+        height: 100%;
+    }
+    
     header{
         .navigation{
             position: relative;
@@ -26,12 +63,17 @@
                 padding:0.5rem;
             }
 
+
+
             ul{
-                display:none;
+                display: flex;
                 flex-direction:column;
                 justify-content: start;
                 align-items: start;
                 margin-bottom: 1rem;
+                max-height: 0px;
+                overflow: hidden;
+                transition: all 0.5s ease-out;
                 li{
                     padding: 0.5rem;
 
@@ -53,12 +95,44 @@
         }
     }
 
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-social-c{
+        display: flex;
+        flex-direction: column;
+        padding: 0.5rem;
+        border-radius:0.5rem;
+        border: 1px dashed black;
+    
+        
+
+        .social-c{
+            margin: 0.25rem;
+            font-size: 18pt;
+            display: flex;
+            flex-direction: row;
+             align-items: start;
+            justify-content:start;
+                a{
+                    text-decoration: none;
+                    color: #000;
+                    margin-left: 0.5rem;
+                }
+    
+                span{
+                    margin-left: 0.5rem;
+                }
+        }
+    }
+
 }
 
 @media (max-width: 768px){
 
     header{
-        margin: 0.5rem;
         .header-content{
             .logo-main{
                 margin: 0.5rem;
@@ -86,12 +160,7 @@
     }
 
     main{
-        margin: 0.5rem;
-        padding: 0.5rem;
-        display: none;
         .content{
-            margin: 0.5rem;
-            margin-bottom: 3rem;
 
             #about-me{
                 @include cardMin;
@@ -107,7 +176,6 @@
 
         }
         .sidebar{
-            margin: 0.5rem;
             height: auto;
             display: flex;
             flex-direction:column;
@@ -126,7 +194,7 @@
 
 
     footer:hover{
-        height: 12rem;
+        height: 15rem;
         opacity: 1;
     
         .container-social{
@@ -156,3 +224,4 @@
     
 
 }
+

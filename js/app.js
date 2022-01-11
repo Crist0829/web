@@ -71,24 +71,6 @@ function writeWords(){
     }, 150)
 }
 
-function preloaderAnimation(){
-    preloaderAnimation()
-    let wordcontainer = document.getElementById("preloader-c")
-    let word = "CARGANDO"
-    let arrayWord = word.split("")
-    let cont = 0
-    let write = setInterval(() => {
-        if(cont === arrayWord.length){
-            cont = 0
-            wordcontainer.innerHTML = ""
-        }else{
-            wordcontainer.innerHTML += arrayWord[cont]
-            cont ++
-        }
-    }, 150)
-}
-
-
 
 function showContent(){
     
@@ -103,57 +85,54 @@ function showContent(){
     botonSideRight.addEventListener("click", ()  => {
         if(contSide){
             textSide.innerHTML = "CUALIDADES"
-            skills.style.display = "none"
-            qualities.style.display = "flex"
+            skills.style.opacity = "0"
+            window.setTimeout(() => {
+                skills.style.display = "none"
+                qualities.style.display = "flex"
+            }, 600)
+            qualities.style.opacity = "1"
             botonSideLeft.style.display = "block";
             botonSideRight.style.display = "none";
             contSide = 0
         }
+
+        
+
     })
 
     botonSideLeft.addEventListener("click", () => {
         if(contSide === 0){
             botonSideRight.style.display = "block";
             textSide.innerHTML = "HABILIDADES"
-            qualities.style.display = "none"
-            skills.style.display = "flex";
+            qualities.style.opacity = "0"
+            window.setTimeout(() => {
+                skills.style.display = "flex"
+                qualities.style.display = "none"
+            }, 600)
+            skills.style.opacity = "1";
             botonSideLeft.style.display = "none";
             contSide ++
         }
     })
     //-----------------------------------------------------------//
 
-    /*El main y el footer están ocultos (dispaly:none) y cuando el documento está cargado se muestran
-    y se oculta el preloader*/
-    let main = document.getElementById("main")
-    let body = document.getElementById("body")
-    let preloader = document.getElementById("preloader")
-    let footer = document.getElementById("footer")
+
     let boton = document.getElementById("icon-responsive")
     let menu = document.getElementById("menuNav")
     let botonMenu = document.getElementById("menu-icon-bars")
     let botonMenuClose = document.getElementById("menu-icon-close")
     let contMenu = 1
     let contSide = 1
-    preloader.style.display = "none" //Se oculta el preloader
-    body.style.display = "block"
-    body.style.backgroundColor = "rgb(80, 75, 75)"
-    footer.style.display = "flex" 
-    
     
 
     boton.addEventListener("click", ()=>{ //Muestra el menu de navegacion cuando la pantalla es pequeña (menor a 768px de ancho)
-        if(contMenu){
-            menu.style.display = "flex"
-            botonMenu.style.display = "none";
-            botonMenuClose.style.display = "block";
-            contMenu = 0
+
+        if(menu.style.maxHeight){
+            menu.style.maxHeight = null
         }else{
-            menu.style.display = "none"
-            botonMenu.style.display = "block";
-            botonMenuClose.style.display = "none";
-            contMenu ++
+            menu.style.maxHeight = menu.scrollHeight + "px"
         }
+
     })
 
     
@@ -183,19 +162,19 @@ function showContent(){
             let auxContent = ""
             for(i in data.projects){
                 auxContent += 
-                `<div class="card m-1">                
-                    <div class="card-info">
-                    <p class="card-title"><a href="${data.projects[i].link}" target="_blank">${data.projects[i].nombre}</a></p>
+                `<div class="card-projects m-1">                
+                    <div class="card-projects-info">
+                    <p class="card-projects-title"><a href="${data.projects[i].link}" target="_blank">${data.projects[i].nombre}</a></p>
                         
-                        <div class="card-body">
-                            <div class="card-img">
+                        <div class="card-projects-body">
+                            <div class="card-projects-img">
                                 <img src="assets/img/projects/${data.projects[i].img}" alt="100" width="150">
                             </div>
-                            <div class="card-text">
+                            <div class="card-projects-text">
                                 <P><span class="value c-primary"><strong>${data.projects[i].descriptionShort}</strong></span></P>
                                 <P><span class="value"><strong>${data.projects[i].dev}</strong></span></P>
                             </div>    
-                            <div class="card-description">
+                            <div class="card-projects-description">
                                 <p><strong>${data.projects[i].descriptionLong}.</strong></p>
                             </div>
                         </div>
@@ -206,8 +185,10 @@ function showContent(){
             projectsContent.innerHTML = auxContent
         })
         .catch(e => {
-            projectsContent.innerHTML = `${e}`
+            projectsContent.innerHTML = `Ocurrió un error al cargar los proyectos, intenta recargar la página.`
         })
+
+        projectsContent.innerHTML = `<div class="loader"></div>`
         
     })
 
@@ -224,25 +205,6 @@ function showContent(){
         contact.style.display = "flex"
         projects.style.display = "none"
     })
-
-//--------------------------------------------------------------------------------//
-
-
-        //Si la pantalla tiene un ancho mayor a 768 px entonces el "main" es unfrid sino es flex 
-    if (window.matchMedia("(min-width: 768px)").matches) {
-        main.style.display = "grid"
-        main.style.gridTemplateColumns = "24rem auto"
-        main.style.gridTemplateRows = "auto auto"
-        main.style.gap = "1rem"
-        main.style.margin = "1rem"
-        
-      } else {
-        main.style.display = "flex"
-        main.style.flexDirection = "column"
-        main.style.margin = "0.5rem"
-        main.style.padding = "0.5rem"
-      }
-
       
 }
 
