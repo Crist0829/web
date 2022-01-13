@@ -83,7 +83,6 @@ function showContent(){
     let qualities = document.getElementById("qualities")
     //botones del side bar para mostrar las habilidades y cualidades
     botonSideRight.addEventListener("click", ()  => {
-        if(contSide){
             textSide.innerHTML = "CUALIDADES"
             skills.style.opacity = "0"
             window.setTimeout(() => {
@@ -94,25 +93,20 @@ function showContent(){
             botonSideLeft.style.display = "block";
             botonSideRight.style.display = "none";
             contSide = 0
-        }
-
-        
-
     })
 
-    botonSideLeft.addEventListener("click", () => {
-        if(contSide === 0){
-            botonSideRight.style.display = "block";
-            textSide.innerHTML = "HABILIDADES"
-            qualities.style.opacity = "0"
-            window.setTimeout(() => {
-                skills.style.display = "flex"
-                qualities.style.display = "none"
-            }, 600)
-            skills.style.opacity = "1";
-            botonSideLeft.style.display = "none";
-            contSide ++
-        }
+    botonSideLeft.addEventListener("click", () => {   
+        botonSideRight.style.display = "block";
+        textSide.innerHTML = "HABILIDADES"
+        qualities.style.opacity = "0"
+        window.setTimeout(() => {
+            skills.style.display = "flex"
+            qualities.style.display = "none"
+        }, 600)
+        skills.style.opacity = "1";
+        botonSideLeft.style.display = "none";
+        contSide ++
+      
     })
     //-----------------------------------------------------------//
 
@@ -212,8 +206,3 @@ window.onload = () => {
     showContent()
     writeWords()
 }
-
-window.onresize = () => {
-    showContent()
-}
-    
