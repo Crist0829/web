@@ -273,6 +273,7 @@ footer:hover .social-text {
   align-items: center;
   justify-content: start;
   box-sizing: border-box;
+  margin-top: 1rem;
 }
 .header-content .projects-container {
   display: flex;
@@ -990,28 +991,10 @@ footer:hover .social-text {
     transform: rotate(360deg);
   }
 }
-@media (max-width: 1400px) and (max-height: 768px) {
-  .sidebar {
-    height: 42rem;
-  }
-
-  .content {
-    height: 23rem;
-  }
-}
 @media (max-width: 1200px) {
   header .header-content .projects-container {
     display: flex;
     flex-direction: column;
-  }
-}
-@media (max-width: 1024px) and (max-height: 768px) {
-  .sidebar {
-    height: 48rem;
-  }
-
-  .content {
-    height: 29rem;
   }
 }
 @media (max-width: 940px) {
