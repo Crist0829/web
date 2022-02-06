@@ -14,7 +14,7 @@ main {
   grid-template-rows: auto auto;
   gap: 1rem;
   margin: 1rem;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
 }
 
 header {
@@ -26,7 +26,6 @@ header {
   flex-direction: column;
   justify-content: start;
   align-items: center;
-  height: min-content;
 }
 
 footer {
@@ -592,8 +591,7 @@ footer:hover .social-text {
 .sidebar {
   background-color: white;
   box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.8), -2px 0px 4px rgba(0, 0, 0, 0.8);
-  height: 52rem;
-  overflow-y: auto;
+  height: min-content;
   grid-row: 1/3;
   white-space: wrap;
 }
@@ -883,10 +881,9 @@ footer:hover .social-text {
 }
 
 .content {
-  height: 33rem;
+  height: auto;
   box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.8), -2px 0px 4px rgba(0, 0, 0, 0.8);
   background-color: white;
-  overflow-y: auto;
 }
 .content #about-me {
   font-size: 16pt;
