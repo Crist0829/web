@@ -1,13 +1,70 @@
 {
     "projects": [
+
+
+        {
+            "nombre": "Loteo Las Moras",
+            "link": "https://crist0829.github.io/lasmoras/",
+            "descriptionShort":  "Landing page",
+            "dev": "Html-Css-Javascript", 
+            "descriptionLong": "Landing Page para proyecto de loteo en Argentina",
+            "img": "lasmoras.png"
+        },
+
+        {
+            "nombre": "El juego de la vida",
+            "link": "https://crist0829.github.io/the-game-of-life/",
+            "descriptionShort":  "Aplicación web",
+            "dev": "Html-Css-Javascript", 
+            "descriptionLong": "Versión web del juego de la vida de John Conway utilizando JS, HTML y CSS",
+            "img": "thegameoflife.png"
+        },
+
+        {
+            "nombre": "Simple App Demo",
+            "link": "http://demo.simpleapp.com.ar",
+            "descriptionShort": "App web",
+            "dev": "Html, Css, Javascript - Bootstrap", 
+            "descriptionLong": "Aplicación web (PWA) Demo para una app de diversos servicios",
+            "img": "logo-sp.jpg"
+        },
+
+        {
+            "nombre": "Mithral",
+            "link": "http://fcecep.tech",
+            "descriptionShort": "Web de server de vídeojuego online",
+            "dev": "Html, Css, Javascript - Bootstrap", 
+            "descriptionLong": "Página web para servidor de vídeojuego online",
+            "img": "mithral.png"
+        },
+
+        {
+            "nombre": "Fcecep",
+            "link": "http://fcecep.tech",
+            "descriptionShort": "Plataforma web",
+            "dev": "PHP - Livewire - Html, Css, Javascript", 
+            "descriptionLong": "Plataforma web de gestión de usuarios",
+            "img": "fcecep.png"
+        },
+
         {
             "nombre": "Maref Group",
             "link": "https://maref.com.ar",
             "descriptionShort": "Aplicación android nativa",
             "dev": "Android Studio - Kotlin", 
             "descriptionLong": "Aplicación android para hacer cálculos y fórmulas para empresa petrolera",
-            "img": "marefgroup.jpg"
+            "img": "maref.png"
         },
+        
+        {
+            "nombre": "Portafolio web",
+            "link": "https://crist0829.github.io/web/",
+            "descriptionShort":  "App web",
+            "dev": "Html-Css(Sass)-Javascript", 
+            "descriptionLong": "App web (PWA) que sirve como CV y portafolio online",
+            "img": "./../me.jpg"
+        },
+
         {
             "nombre": "Donde Compro",
             "link": "https://dondecompro.com.ar",
@@ -31,16 +88,7 @@
             "dev": "PHP - LARAVEL - LIVEWIRE", 
             "descriptionLong": "Página web y plataforma de control de inventario, clientes y proveedores",
             "img": "marefgroup.jpg"
-        },
-        {
-            "nombre": "El juego de la vida",
-            "link": "https://crist0829.github.io/the-game-of-life/",
-            "descriptionShort":  "Aplicación web",
-            "dev": "HTML-CSS-JAVASCRIPT", 
-            "descriptionLong": "Versión web del juego de la vida de John Conway utilizando JS, HTML y CSS",
-            "img": "marefgroup.jpg"
         }
         
-
     ]
 }
