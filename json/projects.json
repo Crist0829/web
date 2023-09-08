@@ -27,7 +27,8 @@
             "link": "https://tl300.selfip.net:41/tl300_task_manager/login",
             "descriptionShort":  "PLATAFORMA WEB Y PWA",
             "dev": "PHP - LARAVEL, INERTIA - REACT", 
-            "descriptionLong": "Plataforma y aplicación web para la gestión de proyectos y tareas",
+            "descriptionLong": 
+            "Plataforma y aplicación web para la gestión de proyectos y tareas.",
             "img": "marefgroup.jpg"
         }
         
