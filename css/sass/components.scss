@@ -357,7 +357,7 @@
 
         //---------Front End---------//
         .html{
-            @include progressBar(rgba(170, 72, 15, 1), 93%)
+            @include progressBar(rgba(170, 72, 15, 1), 90%)
         }
         .css{
             @include progressBar(#2965f1, 85%)
@@ -367,10 +367,10 @@
             @include progressBar(#c9b114, 80%)
         }
         .vue{
-            @include progressBar(#41B883, 80%)
+            @include progressBar(#41B883, 50%)
         }
         .react{
-            @include progressBar(#61DBFB, 50%)
+            @include progressBar(#61DBFB, 80%)
         }
         //----------------------------//
 
@@ -379,16 +379,16 @@
             @include progressBar(#8993be, 85%)
         }
         .laravel{
-            @include progressBar(#F05340, 80%)
+            @include progressBar(#F05340, 85%)
         }
         .sql{
             @include progressBar(#F29111, 80%)
         }
         .node{
-            @include progressBar(#3C873A, 70%)
+            @include progressBar(#3C873A, 80%)
         }
         .mongo{
-            @include progressBar(#3C873A, 50%)
+            @include progressBar(#3C873A, 70%)
             
         }
         //------------------------------------//
@@ -401,7 +401,7 @@
             @include progressBar(#5382a1, 80%);
         }
         .c{
-            @include progressBar(#000, 80%);
+            @include progressBar(#000, 70%);
         }
         .git{
             @include progressBar(#F1502F, 80%);
@@ -629,7 +629,7 @@
             .card-description{
                 color: rgb(0, 0, 0);
                 display: block;
-                text-align: center;
+                text-align: start;
                 font-size: 14pt;
                 font-style: italic;
             }
@@ -662,18 +662,19 @@
                 padding: 0.2rem 0.5rem 0rem 0.5rem;
             }
             .card-projects-text{
+                color: #5c5c5c;
                 margin-bottom:0.5rem;
                 text-align:center;
-                font-size: 12pt;
+                font-size: 8pt;
                 .value{
                     
-                    font-size: 12pt;
+                    font-size: 10pt;
                 }
             }
             .card-projects-img{
                 margin-top: 0.5rem;
                 img{
-                    border-radius: 50%;
+                    border-radius: 0.5rem;
                     width: 100px;
                 }
             }
@@ -713,10 +714,10 @@
             }
 
             .card-projects-description{
-                color: rgb(0, 0, 0);
+                color: rgba(104, 104, 104, 0.819);
                 display: block;
-                text-align: center;
-                font-size: 14pt;
+                text-align: start;
+                font-size: 10pt;
             }
         }
 
