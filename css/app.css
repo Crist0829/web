@@ -5,7 +5,7 @@
 
 body {
   font-family: main;
-  background-color: #504b4b;
+  background-color: rgb(80, 75, 75);
 }
 
 main {
@@ -103,7 +103,7 @@ footer:hover .social-text {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #afafaf;
+  background: rgb(175, 175, 175);
 }
 
 /* Handle */
@@ -416,7 +416,7 @@ footer:hover .social-text {
 }
 .side-card .i-html {
   font-size: 32px !important;
-  color: #aa480f;
+  color: rgb(170, 72, 15);
 }
 .side-card .i-css {
   font-size: 32px !important;
@@ -489,8 +489,8 @@ footer:hover .social-text {
   /*---Barras de progreso---*/
 }
 .side-card .progress .html {
-  width: 93%;
-  background-color: #aa480f;
+  width: 90%;
+  background-color: rgb(170, 72, 15);
   border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
 }
@@ -507,13 +507,13 @@ footer:hover .social-text {
   font-size: 13pt;
 }
 .side-card .progress .vue {
-  width: 80%;
+  width: 50%;
   background-color: #41B883;
   border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
 }
 .side-card .progress .react {
-  width: 50%;
+  width: 80%;
   background-color: #61DBFB;
   border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
@@ -525,7 +525,7 @@ footer:hover .social-text {
   font-size: 13pt;
 }
 .side-card .progress .laravel {
-  width: 80%;
+  width: 85%;
   background-color: #F05340;
   border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
@@ -537,13 +537,13 @@ footer:hover .social-text {
   font-size: 13pt;
 }
 .side-card .progress .node {
-  width: 70%;
+  width: 80%;
   background-color: #3C873A;
   border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
 }
 .side-card .progress .mongo {
-  width: 50%;
+  width: 70%;
   background-color: #3C873A;
   border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
@@ -561,7 +561,7 @@ footer:hover .social-text {
   font-size: 13pt;
 }
 .side-card .progress .c {
-  width: 80%;
+  width: 70%;
   background-color: #000;
   border-radius: 0.3rem 0rem 0rem 0.3rem;
   font-size: 13pt;
@@ -753,7 +753,7 @@ footer:hover .social-text {
   color: #000;
 }
 .card .card-info .card-body:hover {
-  background-color: #00aa8856;
+  background-color: rgba(0, 170, 136, 0.337254902);
 }
 .card .card-info .card-body:hover .card-text {
   display: none;
@@ -762,9 +762,9 @@ footer:hover .social-text {
   display: none;
 }
 .card .card-info .card-body:hover .card-description {
-  color: black;
+  color: rgb(0, 0, 0);
   display: block;
-  text-align: center;
+  text-align: start;
   font-size: 14pt;
   font-style: italic;
 }
@@ -789,18 +789,19 @@ footer:hover .social-text {
   padding: 0.2rem 0.5rem 0rem 0.5rem;
 }
 .card-projects .card-projects-info .card-projects-body .card-projects-text {
+  color: #5c5c5c;
   margin-bottom: 0.5rem;
   text-align: center;
-  font-size: 12pt;
+  font-size: 8pt;
 }
 .card-projects .card-projects-info .card-projects-body .card-projects-text .value {
-  font-size: 12pt;
+  font-size: 10pt;
 }
 .card-projects .card-projects-info .card-projects-body .card-projects-img {
   margin-top: 0.5rem;
 }
 .card-projects .card-projects-info .card-projects-body .card-projects-img img {
-  border-radius: 50%;
+  border-radius: 0.5rem;
   width: 100px;
 }
 .card-projects .card-projects-info .card-projects-body .card-projects-description {
@@ -826,7 +827,7 @@ footer:hover .social-text {
   color: #000;
 }
 .card-projects .card-projects-info .card-projects-body:hover {
-  background-color: #00aa8856;
+  background-color: rgba(0, 170, 136, 0.337254902);
 }
 .card-projects .card-projects-info .card-projects-body:hover .card-projects-text {
   display: none;
@@ -835,10 +836,10 @@ footer:hover .social-text {
   display: none;
 }
 .card-projects .card-projects-info .card-projects-body:hover .card-projects-description {
-  color: black;
+  color: rgba(104, 104, 104, 0.819);
   display: block;
-  text-align: center;
-  font-size: 14pt;
+  text-align: start;
+  font-size: 10pt;
 }
 
 .navigation {
@@ -913,7 +914,7 @@ footer:hover .social-text {
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 .content #projects {
   font-size: 16pt;
@@ -942,7 +943,7 @@ footer:hover .social-text {
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 .content #contact {
   font-size: 16pt;
@@ -971,7 +972,7 @@ footer:hover .social-text {
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 14pt;
+  font-size: 12pt;
 }
 
 .loader {
@@ -1001,11 +1002,9 @@ footer:hover .social-text {
   .content {
     height: 100%;
   }
-
   .sidebar {
     height: 100%;
   }
-
   header .navigation {
     position: relative;
     width: 100%;
@@ -1044,12 +1043,10 @@ footer:hover .social-text {
   header .header-content .projects-container {
     display: none;
   }
-
   main {
     display: flex;
     flex-direction: column;
   }
-
   .container-social-c {
     display: flex;
     flex-direction: column;
@@ -1081,7 +1078,6 @@ footer:hover .social-text {
   header .header-content .logo-main .logo-image {
     width: 300px;
   }
-
   .logo-words-group {
     top: 83%;
   }
@@ -1089,11 +1085,9 @@ footer:hover .social-text {
     font-size: 10pt;
     font-weight: bold;
   }
-
   .logo-words .letter-logo {
     font-size: 10pt;
   }
-
   main .content #about-me article {
     display: flex;
     flex-direction: column;
@@ -1143,7 +1137,6 @@ footer:hover .social-text {
   main .sidebar .side-title {
     width: 100%;
   }
-
   footer:hover {
     height: 15rem;
     opacity: 1;

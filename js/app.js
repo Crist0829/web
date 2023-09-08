@@ -81,6 +81,9 @@ function showContent(){
     let textSide = document.getElementById("side-title-text")
     let skills = document.getElementById("skills")
     let qualities = document.getElementById("qualities")
+    let qualitiesAux = 0
+    let contSide = 1
+
     //botones del side bar para mostrar las habilidades y cualidades
     botonSideRight.addEventListener("click", ()  => {
             textSide.innerHTML = "CUALIDADES"
@@ -88,7 +91,7 @@ function showContent(){
             window.setTimeout(() => {
                 skills.style.display = "none"
                 qualities.style.display = "flex"
-            }, 600)
+            }, 800)
             qualities.style.opacity = "1"
             botonSideLeft.style.display = "block";
             botonSideRight.style.display = "none";
@@ -102,7 +105,7 @@ function showContent(){
         window.setTimeout(() => {
             skills.style.display = "flex"
             qualities.style.display = "none"
-        }, 600)
+        }, 800)
         skills.style.opacity = "1";
         botonSideLeft.style.display = "none";
         contSide ++
@@ -116,7 +119,6 @@ function showContent(){
     let botonMenu = document.getElementById("menu-icon-bars")
     let botonMenuClose = document.getElementById("menu-icon-close")
     let contMenu = 1
-    let contSide = 1
     
 
     boton.addEventListener("click", ()=>{ //Muestra el menu de navegacion cuando la pantalla es pequeña (menor a 768px de ancho)

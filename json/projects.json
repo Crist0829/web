@@ -3,90 +3,31 @@
 
 
         {
-            "nombre": "Loteo Las Moras",
-            "link": "https://crist0829.github.io/lasmoras/",
-            "descriptionShort":  "Landing page",
-            "dev": "Html-Css-Javascript", 
-            "descriptionLong": "Landing Page para proyecto de loteo en Argentina",
-            "img": "lasmoras.png"
-        },
-
-        {
-            "nombre": "El juego de la vida",
+            "nombre": "The Game Of Life",
             "link": "https://crist0829.github.io/the-game-of-life/",
-            "descriptionShort":  "Aplicación web",
-            "dev": "Html-Css-Javascript", 
+            "descriptionShort":  "APLICACIÓN WEB",
+            "dev": "HTML, CSS, JAVASCRIPT", 
             "descriptionLong": "Versión web del juego de la vida de John Conway utilizando JS, HTML y CSS",
             "img": "thegameoflife.png"
         },
 
-        {
-            "nombre": "Simple App Demo",
-            "link": "http://demo.simpleapp.com.ar",
-            "descriptionShort": "App web",
-            "dev": "Html, Css, Javascript - Bootstrap", 
-            "descriptionLong": "Aplicación web (PWA) Demo para una app de diversos servicios",
-            "img": "logo-sp.jpg"
-        },
-
-        {
-            "nombre": "Mithral",
-            "link": "http://fcecep.tech",
-            "descriptionShort": "Web de server de vídeojuego online",
-            "dev": "Html, Css, Javascript - Bootstrap", 
-            "descriptionLong": "Página web para servidor de vídeojuego online",
-            "img": "mithral.png"
-        },
-
-        {
-            "nombre": "Fcecep",
-            "link": "http://fcecep.tech",
-            "descriptionShort": "Plataforma web",
-            "dev": "PHP - Livewire - Html, Css, Javascript", 
-            "descriptionLong": "Plataforma web de gestión de usuarios",
-            "img": "fcecep.png"
-        },
+        
 
         {
             "nombre": "Maref Group",
             "link": "https://maref.com.ar",
-            "descriptionShort": "Aplicación android nativa",
-            "dev": "Android Studio - Kotlin", 
+            "descriptionShort": "APLICACIÓN ANDROID",
+            "dev": "ANDROID STUDIO, JAVA, KOTLIN", 
             "descriptionLong": "Aplicación android para hacer cálculos y fórmulas para empresa petrolera",
             "img": "maref.png"
         },
         
         {
-            "nombre": "Portafolio web",
-            "link": "https://crist0829.github.io/web/",
-            "descriptionShort":  "App web",
-            "dev": "Html-Css(Sass)-Javascript", 
-            "descriptionLong": "App web (PWA) que sirve como CV y portafolio online",
-            "img": "./../me.jpg"
-        },
-
-        {
-            "nombre": "Donde Compro",
-            "link": "https://dondecompro.com.ar",
-            "descriptionShort": "Aplicación web",
-            "dev": "PHP - MySql - HTML - CSS - JS ", 
-            "descriptionLong": "Aplicación web que compara precios de productos de los negocios registrados",
-            "img": "marefgroup.jpg"
-        },
-        {
-            "nombre": "App agrícola",
-            "link": "",
-            "descriptionShort": "Aplicación web",
-            "dev": "PHP - MySql - HTML - CSS - JS ", 
-            "descriptionLong": "Aplicación web que funciona como cuaderno de campo virtual",
-            "img": "marefgroup.jpg"
-        },
-        {
-            "nombre": "MO distribuidora",
-            "link": "https://modistribuidora.online",
-            "descriptionShort":  "Plataforma web",
-            "dev": "PHP - LARAVEL - LIVEWIRE", 
-            "descriptionLong": "Página web y plataforma de control de inventario, clientes y proveedores",
+            "nombre": "Task Manager",
+            "link": "https://tl300.selfip.net:41/tl300_task_manager/login",
+            "descriptionShort":  "PLATAFORMA WEB Y PWA",
+            "dev": "PHP - LARAVEL, INERTIA - REACT", 
+            "descriptionLong": "Plataforma y aplicación web para la gestión de proyectos y tareas",
             "img": "marefgroup.jpg"
         }
         
