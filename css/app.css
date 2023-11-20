@@ -9,6 +9,7 @@ body {
 }
 
 main {
+  font-family: main;
   display: grid;
   grid-template-columns: 25rem auto;
   grid-template-rows: auto auto;
@@ -95,6 +96,17 @@ footer:hover .social-text {
 @font-face {
   font-family: main;
   src: url("../../assets/fonts/Roboto/Roboto-Regular.ttf");
+}
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 /* width */
 ::-webkit-scrollbar {
@@ -376,6 +388,36 @@ footer:hover .social-text {
   color: white;
 }
 
+.icons-projects-container {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 1.8rem;
+}
+.icons-projects-container .c-laravel {
+  color: rgb(170, 72, 15);
+}
+.icons-projects-container .c-html {
+  color: rgb(170, 72, 15);
+}
+.icons-projects-container .c-css {
+  color: #2965f1;
+}
+.icons-projects-container .c-js {
+  color: #c9b114;
+}
+.icons-projects-container .c-php {
+  color: #8993be;
+}
+.icons-projects-container .c-react {
+  color: #61DBFB;
+}
+.icons-projects-container .c-java {
+  color: #5382a1;
+}
+.icons-projects-container .c-android {
+  color: #a4c639;
+}
+
 .side-card {
   position: relative;
   display: flex;
@@ -605,6 +647,15 @@ footer:hover .social-text {
   text-align: center;
   display: flex;
   flex: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.sidebar .side-title .side-title-text {
+  justify-self: center;
+}
+.sidebar .side-title .icon-side {
+  animation: pulse 2s infinite;
 }
 .sidebar .side-title #side-icon-left {
   border: solid 1px #fff;
@@ -762,11 +813,12 @@ footer:hover .social-text {
   display: none;
 }
 .card .card-info .card-body:hover .card-description {
-  color: rgb(0, 0, 0);
+  color: rgba(0, 0, 0, 0.826);
   display: block;
-  text-align: start;
-  font-size: 14pt;
+  font-size: 15pt;
+  font-weight: bold;
   font-style: italic;
+  text-align: center;
 }
 
 .card-projects {
@@ -776,8 +828,8 @@ footer:hover .social-text {
   background-color: #ffffff;
 }
 .card-projects .card-projects-info .card-projects-body {
-  height: 12rem;
-  width: 15rem;
+  height: 14rem;
+  width: 18rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -797,15 +849,36 @@ footer:hover .social-text {
 .card-projects .card-projects-info .card-projects-body .card-projects-text .value {
   font-size: 10pt;
 }
-.card-projects .card-projects-info .card-projects-body .card-projects-img {
-  margin-top: 0.5rem;
-}
 .card-projects .card-projects-info .card-projects-body .card-projects-img img {
-  border-radius: 0.5rem;
-  width: 100px;
+  border-radius: 0.2rem;
+  width: 250px;
 }
 .card-projects .card-projects-info .card-projects-body .card-projects-description {
   display: none;
+}
+.card-projects .card-projects-info .card-projects-body .card-projects-description .visit-button-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #00AA88;
+  padding: 0.4rem;
+  border-radius: 4px;
+  margin-right: 0.5rem;
+  margin-top: 1rem;
+  align-self: center;
+}
+.card-projects .card-projects-info .card-projects-body .card-projects-description .visit-button-container a {
+  font-size: 12pt;
+  text-decoration: none;
+  color: white;
+  margin: 0px;
+  transition: all ease-in 0.2s;
+}
+.card-projects .card-projects-info .card-projects-body .card-projects-description .visit-button-container a i {
+  margin-left: 0.4rem;
+}
+.card-projects .card-projects-info .card-projects-body .card-projects-description .visit-button-container a:hover {
+  font-size: 13pt;
+  color: #000;
 }
 .card-projects .card-projects-info .card-projects-title {
   margin: 0px;
@@ -837,7 +910,8 @@ footer:hover .social-text {
 }
 .card-projects .card-projects-info .card-projects-body:hover .card-projects-description {
   color: rgba(104, 104, 104, 0.819);
-  display: block;
+  display: flex;
+  flex-direction: column;
   text-align: start;
   font-size: 10pt;
 }
@@ -905,7 +979,6 @@ footer:hover .social-text {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .content #about-me article .article-description {
   margin: 0.25rem;
@@ -914,7 +987,9 @@ footer:hover .social-text {
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 12pt;
+  font-size: 13pt;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.7411764706);
 }
 .content #projects {
   font-size: 16pt;
@@ -934,7 +1009,6 @@ footer:hover .social-text {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .content #projects article .article-description {
   margin: 0.25rem;
@@ -943,7 +1017,9 @@ footer:hover .social-text {
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 12pt;
+  font-size: 13pt;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.7411764706);
 }
 .content #contact {
   font-size: 16pt;
@@ -963,7 +1039,6 @@ footer:hover .social-text {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  flex-wrap: wrap;
 }
 .content #contact article .article-description {
   margin: 0.25rem;
@@ -972,7 +1047,9 @@ footer:hover .social-text {
   display: flex;
   flex-direction: column;
   align-items: start;
-  font-size: 12pt;
+  font-size: 13pt;
+  letter-spacing: normal;
+  color: rgba(0, 0, 0, 0.7411764706);
 }
 
 .loader {
@@ -992,6 +1069,26 @@ footer:hover .social-text {
     transform: rotate(360deg);
   }
 }
+#projects-content-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin-top: 3rem;
+}
+#projects-content-buttons .projects-content-button {
+  background-color: #00AA88;
+  font-size: 8pt;
+  color: white;
+  padding: 0.3rem 0.5rem;
+  border-radius: 100%;
+  transition: all ease-in 0.3s;
+  cursor: pointer;
+}
+#projects-content-buttons .projects-content-button:hover {
+  color: #000;
+  opacity: 0.6;
+}
+
 @media (max-width: 1200px) {
   header .header-content .projects-container {
     display: flex;
@@ -1004,6 +1101,10 @@ footer:hover .social-text {
   }
   .sidebar {
     height: 100%;
+  }
+  .sidebar .side-title {
+    justify-content: center;
+    gap: 2rem;
   }
   header .navigation {
     position: relative;
@@ -1136,6 +1237,7 @@ footer:hover .social-text {
   }
   main .sidebar .side-title {
     width: 100%;
+    justify-content: center;
   }
   footer:hover {
     height: 15rem;

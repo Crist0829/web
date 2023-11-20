@@ -7,7 +7,7 @@
 	<meta name="author" content="Crist">
 	<meta name="theme-color" content="#00AA884">
     <link rel="manifest" href="crist.webmanifest">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app.css" onload="this.rel='stylesheet'">
     <link rel="icon" href="icons/icon-32.png" type="image/x-icon">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.css">
     <title>CRIST</title>
@@ -32,6 +32,7 @@
                     <div class="logo-words-group">
                         <div class="logo-words" id="logo-words">
                         </div>
+                        <p id="logo-letters"></p>
                         <p class="write-bar">|</p>
                     </div>
                     
@@ -64,11 +65,10 @@
         </header>
         <div class="sidebar">
             <div class="side-title">
-                <div class="icon-side">
+                <p class = "no-selection side-title-text" id="side-title-text">HABILIDADES</p>
+                <div class="icon-side" id="icon-side">
                     <i class="fas fa-arrow-right" id="side-icon-right"></i>
-                    <i class="fas fa-arrow-left" id="side-icon-left"></i>
                 </div>
-                <p class = "no-selection" id="side-title-text">HABILIDADES</p>
             </div>
             <div>
                 <div class="skills no-selection" id="skills">
@@ -212,21 +212,24 @@
                         <div class="side-card-title c-blue">Sociales</div>
                         <div class="side-card-body">
                             <ul class="list-qualities">
-                                <li><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Comunicativo</span></li>
-                                <li><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Trabajo en equipo</span></li>
-                                <li><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Tolerante</span></li>
-                                <li><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Respetuoso</span></li>
+                                <li id="comunicativo"><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Comunicativo</span></li>
+                                <li id="trabajoEnEquipo"><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Trabajo en equipo</span></li>
+                                <li id="tolerante"><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Tolerante</span></li>
+                                <li id="respetuoso"><span class="list-item-icon"><i class="fas fa-chess-knight"></i></span><span class="list-item-text">Respetuoso</span></li>
                             </ul>
                         </div>
+
+                        
+
                     </div>
                     <div class="side-card border-red-2">
                         <div class="side-card-title c-red">Laborales</div>
                         <div class="side-card-body">
                             <ul class="list-qualities">
-                                <li><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Responsable</span></li>
-                                <li><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Puntual</span></li>
-                                <li><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Proactivo</span></li>
-                                <li><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Adaptabilidad</span></li>
+                                <li id="responsable"><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Responsable</span></li>
+                                <li id="puntual"><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Puntual</span></li>
+                                <li id="proactivo"><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Proactivo</span></li>
+                                <li id="adaptabilidad"><span class="list-item-icon"><i class="fas fa-chess-rook"></i></span><span class="list-item-text">Adaptabilidad</span></li>
                             </ul>
                         </div>
                     </div>
@@ -234,10 +237,10 @@
                         <div class="side-card-title c-green">Personales</div>
                         <div class="side-card-body">
                             <ul class="list-qualities">
-                                <li><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Creativo</span></li>
-                                <li><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Métodico</span></li>
-                                <li><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Paciente</span></li>
-                                <li><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Ordenado</span></li>
+                                <li id="creativo"><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Creativo</span></li>
+                                <li id="metodico"><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Métodico</span></li>
+                                <li id="paciente"><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Paciente</span></li>
+                                <li id="ordenado"><span class="list-item-icon"><i class="fas fa-chess-bishop"></i></span><span class="list-item-text">Ordenado</span></li>
                             </ul>
                         </div>
                     </div>
@@ -249,13 +252,13 @@
         <div class="content">
            <div id="about-me">
                 <h3 class="title">SOBRE MÍ</h3>
-                <article> 
+                <article class="card-about-me"> 
                     <div class="card m-1">                
                         <div class="card-info">
                             <p class="card-title">CRISTIAN JIMÉNEZ</p>
                             <div class="card-body">
                                 <div class="card-img">
-                                    <img src="assets/img/me.png" alt="100">
+                                    <img src="assets/img/me.jpg" alt="100">
                                 </div>
                                 <div class="card-text">
                                     <P><span class="value">27 años.</span></P>
@@ -264,7 +267,7 @@
                                 <div class="card-description">
                                     <p>"Soy una persona simple:</p>
                                     <p>me gustan los retos...</p>
-                                    <p>y el café."</p>
+                                    <p>y el café"</p>
                                 </div>
                             </div>
                         </div>
@@ -275,10 +278,10 @@
                                 Un aficionado del ajedrez, las matemáticas y los puzzles. </p>
                                 <p class="m-1">Más allá de mi gusto por resolver problemas de manera metódica y creativa, <br> 
                                     me gusta compartir mis conocimientos y experiencia al mismo tiempo que aprender de los demás.</p>
-                                <p class="m-1">Si bien mi pasión por la tecnología, mi curiosidad y ganas de aprender, <br> 
-                                Me ha llevado a involucrarme en diversas áreas del desarrollo como: <br> el desarollo móvil, desarrollo
-                            de aplicaciones de escritorio multiplataforma, desarrollo de videojuegos 2D, <br> actualmente
-                        me especializo en desarrollo web full-stack <br> donde he acumulado más de 5 años de experiencia.</p>
+                                <p class="m-1">Si bien mi pasión por la tecnología y ganas de aprender
+                                me han llevado a involucrarme en diversas áreas del desarrollo como: el desarollo móvil, desarrollo
+                            de aplicaciones de escritorio multiplataforma y desarrollo de videojuegos 2D, actualmente
+                        me especializo en desarrollo web full-stack donde he acumulado más de 5 años de experiencia.</p>
                         </div>
                     </div>
     
@@ -289,6 +292,8 @@
                 <h3 class="title">ALGUNOS PROYECTOS Y TRABAJOS DESTACADOS</h3>
                 <article id="projects-content"> 
                 </article>
+                <div id="projects-content-buttons">
+                </div>
             </div>
 
             <div id="contact">
@@ -317,7 +322,15 @@
             <div class="social"><i class="fab fa-github"></i> <span class="social-text"> <a href="https://github.com/Crist0829" target="_blank"> Crist0829</a></span></div>
         </div>
     </footer>
-<script src="vendor/fontawesome/js/all.js"></script>
+<script src="vendor/fontawesome/js/all.js" defer></script>
 <script src="js/app.js"></script>
+<!-- Development -->
+<script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+<script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+<!-- Production -->
+<!-- <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script> -->
+<script src="js/tooltips.js" defer></script>
 </body>
 </html>

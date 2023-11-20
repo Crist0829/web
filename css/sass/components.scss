@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "animations";
 
     /* width */
 ::-webkit-scrollbar {
@@ -199,6 +200,9 @@
             font-size:14pt;
         }
     }
+
+    
+
 }
 
 
@@ -267,6 +271,46 @@
 .skill{
     text-align: center;
     color: white;
+}
+
+.icons-projects-container{
+
+    display: flex;
+    gap: 0.5rem;
+    font-size: 1.8rem;
+
+    .c-laravel{
+        color: rgba(170, 72, 15, 1);
+    }
+
+    .c-html{
+        color: rgba(170, 72, 15, 1);
+    }
+
+    .c-css{
+        color: #2965f1;
+    }
+
+    .c-js{
+        color: #c9b114;
+    }
+
+    .c-php{
+        color: #8993be;
+    }
+
+    .c-react{
+        color: #61DBFB;
+    }
+
+    .c-java{
+        color: #5382a1;
+    }
+
+    .c-android{
+        color : #a4c639;
+    }
+
 }
 
 .side-card{
@@ -445,6 +489,17 @@
         text-align: center;
         display: flex;
         flex: row;
+        align-items: center;
+        justify-content:center;
+        gap: 2rem;
+
+        .side-title-text{
+            justify-self: center;
+        }
+
+        .icon-side{
+            animation: pulse 2s infinite;
+        }
 
         #side-icon-left{
             border: solid 1px #fff;
@@ -627,11 +682,12 @@
             }
 
             .card-description{
-                color: rgb(0, 0, 0);
+                color: rgba(0, 0, 0, 0.826);
                 display: block;
-                text-align: start;
-                font-size: 14pt;
+                font-size: 15pt;
+                font-weight: bold;
                 font-style: italic;
+                text-align: center;
             }
         }
 
@@ -649,8 +705,8 @@
 
     .card-projects-info{
         .card-projects-body{
-            height: 12rem;
-            width: 15rem;
+            height: 14rem;
+            width: 18rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -672,15 +728,46 @@
                 }
             }
             .card-projects-img{
-                margin-top: 0.5rem;
                 img{
-                    border-radius: 0.5rem;
-                    width: 100px;
+                    border-radius: 0.2rem;
+                    width: 250px;
                 }
             }
             .card-projects-description{
                 display: none;
+
+                .visit-button-container{
+                    display: flex;
+                    flex-direction: column;
+                    background-color: $primary;
+                    padding: 0.4rem;
+                    border-radius: 4px;
+                    margin-right: 0.5rem;
+                    margin-top: 1rem;
+                    align-self: center;
+                    a{
+                        font-size: 12pt;
+                        text-decoration: none;
+                        color: white;
+                        margin: 0px;
+                        transition: all ease-in 0.2s;
+
+                        i{
+                            margin-left: 0.4rem;
+                        }
+
+                    }
+
+                    a:hover{
+                        font-size: 13pt;
+                        color: #000;
+                    }
+                }
+
             }
+
+            
+
         }
 
         .card-projects-title{
@@ -715,7 +802,8 @@
 
             .card-projects-description{
                 color: rgba(104, 104, 104, 0.819);
-                display: block;
+                display: flex;
+                flex-direction: column;
                 text-align: start;
                 font-size: 10pt;
             }
@@ -814,4 +902,25 @@
     100% { transform: rotate(360deg); }
   }
 
+#projects-content-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin-top: 3rem;
+
+    .projects-content-button{
+        background-color: $primary;
+        font-size: 8pt;
+        color : white;
+        padding: 0.3rem 0.5rem;
+        border-radius: 100%;
+        transition: all ease-in 0.3s;
+        cursor: pointer;
+    }
+
+    .projects-content-button:hover{
+        color: #000;
+        opacity: 0.6;
+    }
+}
 

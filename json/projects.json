@@ -3,34 +3,51 @@
 
 
         {
-            "nombre": "The Game Of Life",
+            "nombre": "THE GAME OF LIFE",
             "link": "https://crist0829.github.io/the-game-of-life/",
             "descriptionShort":  "APLICACIÓN WEB",
-            "dev": "HTML, CSS, JAVASCRIPT", 
-            "descriptionLong": "Versión web del juego de la vida de John Conway utilizando JS, HTML y CSS",
+            "dev": "HTML,CSS,JAVASCRIPT", 
+            "descriptionLong": "Versión web del juego de la vida de John Conway utilizando JS, HTML y CSS. Aplico programación funcional y operaciones con arrays bidimencionales (matrices)",
             "img": "thegameoflife.png"
         },
 
-        
+        {
+            "nombre": "TEST PROJECT",
+            "link": "https://github.com/Crist0796/test-project",
+            "descriptionShort":  "PLATAFORMA WEB SPA",
+            "dev": "PHP,LARAVEL,REACT", 
+            "descriptionLong": 
+            "Solución de prueba técnica para desarrollador back end PHP. Utilizo Laravel 10, InertiaJS y React, además hago uso de: Eloquent ORM, CRUD, POO, Patrones de diseño, Inición de sesión.",
+            "img": "test-project.jpg"
+        },
 
         {
-            "nombre": "Maref Group",
+            "nombre": "MAREF GROUP APP",
             "link": "https://maref.com.ar",
             "descriptionShort": "APLICACIÓN ANDROID",
-            "dev": "ANDROID STUDIO, JAVA, KOTLIN", 
-            "descriptionLong": "Aplicación android para hacer cálculos y fórmulas para empresa petrolera",
+            "dev": "ANDROID,JAVA,KOTLIN", 
+            "descriptionLong": "Aplicación Android para hacer cálculos y fórmulas para empresa petrolera, utilicé Java y Kotlin, utilizando fragment para las pantallas",
             "img": "maref.png"
         },
         
         {
-            "nombre": "Task Manager",
+            "nombre": "TASK MANAGER",
             "link": "https://tl300.selfip.net:41/tl300_task_manager/login",
             "descriptionShort":  "PLATAFORMA WEB Y PWA",
-            "dev": "PHP - LARAVEL, INERTIA - REACT", 
+            "dev": "PHP,LARAVEL,REACT", 
             "descriptionLong": 
-            "Plataforma y aplicación web para la gestión de proyectos y tareas.",
-            "img": "marefgroup.jpg"
-        }
+            "Plataforma y aplicación web para la gestión de proyectos y tareas. Utilizo Laravel 10, InertiaJS y React, además hago uso de: pruebas unitarias, queues, pusher, amazón S3 y Envío de emails",
+            "img": "task-manager.jpg"
+        },
         
+        {
+            "nombre": "NE TRAINING",
+            "link": "#",
+            "descriptionShort":  "PLATAFORMA WEB SPA - PWA",
+            "dev": "PHP,LARAVEL,REACT", 
+            "descriptionLong": 
+            "Plataforma y aplicación web para la gestión de entrenamientos personalizados. En progreso: estoy utilizando laravel 10, InertiaJS, React para el desarrollo",
+            "img": "ne-training.jpg"
+        }
     ]
 }

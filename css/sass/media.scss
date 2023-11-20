@@ -18,6 +18,11 @@
     }
     .sidebar{
         height: 100%;
+
+        .side-title{
+            justify-content: center;
+            gap: 2rem;
+        }
     }
     
     header{
@@ -101,6 +106,8 @@
         }
     }
 
+    
+
 }
 
 @media (max-width: 768px){
@@ -161,6 +168,7 @@
 
             .side-title{
                 width: 100%;
+                justify-content: center;
             }
         }
     }
