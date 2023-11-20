@@ -323,13 +323,6 @@ footer:hover .social-text {
   text-align: center;
   transition: font-size 0.5s ease;
 }
-.header-content .project-body:hover {
-  padding: 1rem;
-}
-.header-content .project-body:hover .text-body {
-  padding: 0.1rem;
-  font-size: 14pt;
-}
 
 .container-social-c {
   display: flex;
